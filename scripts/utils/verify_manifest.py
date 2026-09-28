@@ -32,7 +32,7 @@ from utils.reporting import write_json  # noqa: E402
 
 MANIFEST_NAME = "MANIFEST_SHA256.csv"
 IGNORED_TOP_LEVEL = {"outputs_reproduced"}
-IGNORED_DIR_NAMES = {"__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache"}
+IGNORED_DIR_NAMES = {".git", "__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache"}
 IGNORED_SUFFIXES = {".pyc", ".pyo", ".pyd"}
 
 

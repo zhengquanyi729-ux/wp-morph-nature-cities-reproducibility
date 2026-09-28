@@ -53,7 +53,7 @@ MANIFEST_PATH = PACKAGE_ROOT / "MANIFEST_SHA256.csv"
 LOCK_PATH = PACKAGE_ROOT / "requirements-lock.txt"
 
 EXCLUDED_TOP_LEVEL = {"outputs_reproduced"}
-IGNORED_DIR_NAMES = {"__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache"}
+IGNORED_DIR_NAMES = {".git", "__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache"}
 IGNORED_SUFFIXES = {".pyc", ".pyo", ".pyd"}
 
 # ---------------------------------------------------------------------------

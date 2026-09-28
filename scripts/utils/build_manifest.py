@@ -35,7 +35,7 @@ MANIFEST_NAME = "MANIFEST_SHA256.csv"
 EXCLUDED_PREFIXES = ("outputs_reproduced/",)
 # Runtime caches are not distributed content: they are recreated by the
 # interpreter and their byte content depends on the interpreter build.
-EXCLUDED_PARTS = {"__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache"}
+EXCLUDED_PARTS = {".git", "__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache"}
 EXCLUDED_SUFFIXES = (".pyc", ".pyo", ".pyd")
 
 
