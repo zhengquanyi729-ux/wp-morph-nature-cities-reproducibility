@@ -1,0 +1,4 @@
+﻿relationship,expected_sign,exploration_city_count,validation_city_count,validation_unit_count,same_sign_count,sign_reversal_count,insufficient_count,undefined_count,directional_reproducibility_fraction
+BUILDING_ROAD,POSITIVE,3,3,12,12,0,0,0,1
+BUILDING_HEIGHT,POSITIVE,3,3,12,12,0,0,0,1
+ROAD_HEIGHT,POSITIVE,3,3,12,12,0,0,0,1

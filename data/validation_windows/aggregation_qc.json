@@ -1,0 +1,86 @@
+{
+  "work_package": "WP-MORPH-05A",
+  "records": [
+    {
+      "city_id": "P001",
+      "scale_checks": {
+        "1km": {
+          "window_count_all": 4196,
+          "window_count_coverage80": 3728,
+          "height_valid_window_count_all": 4052,
+          "height_valid_window_count_coverage80": 3693,
+          "effective_area_closure": true,
+          "building_area_closure": true,
+          "road_length_closure": true,
+          "height_valid_area_closure": true
+        },
+        "5km": {
+          "window_count_all": 205,
+          "window_count_coverage80": 129,
+          "height_valid_window_count_all": 205,
+          "height_valid_window_count_coverage80": 129,
+          "effective_area_closure": true,
+          "building_area_closure": true,
+          "road_length_closure": true,
+          "height_valid_area_closure": true
+        }
+      },
+      "nested_1km_to_5km": true,
+      "aggregation_qc": "PASS"
+    },
+    {
+      "city_id": "P003",
+      "scale_checks": {
+        "1km": {
+          "window_count_all": 3148,
+          "window_count_coverage80": 2626,
+          "height_valid_window_count_all": 2991,
+          "height_valid_window_count_coverage80": 2605,
+          "effective_area_closure": true,
+          "building_area_closure": true,
+          "road_length_closure": true,
+          "height_valid_area_closure": true
+        },
+        "5km": {
+          "window_count_all": 177,
+          "window_count_coverage80": 80,
+          "height_valid_window_count_all": 175,
+          "height_valid_window_count_coverage80": 80,
+          "effective_area_closure": true,
+          "building_area_closure": true,
+          "road_length_closure": true,
+          "height_valid_area_closure": true
+        }
+      },
+      "nested_1km_to_5km": true,
+      "aggregation_qc": "PASS"
+    },
+    {
+      "city_id": "P005",
+      "scale_checks": {
+        "1km": {
+          "window_count_all": 2089,
+          "window_count_coverage80": 1719,
+          "height_valid_window_count_all": 1947,
+          "height_valid_window_count_coverage80": 1655,
+          "effective_area_closure": true,
+          "building_area_closure": true,
+          "road_length_closure": true,
+          "height_valid_area_closure": true
+        },
+        "5km": {
+          "window_count_all": 126,
+          "window_count_coverage80": 50,
+          "height_valid_window_count_all": 124,
+          "height_valid_window_count_coverage80": 50,
+          "effective_area_closure": true,
+          "building_area_closure": true,
+          "road_length_closure": true,
+          "height_valid_area_closure": true
+        }
+      },
+      "nested_1km_to_5km": true,
+      "aggregation_qc": "PASS"
+    }
+  ]
+}

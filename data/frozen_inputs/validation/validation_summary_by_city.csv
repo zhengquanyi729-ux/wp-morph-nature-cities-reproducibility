@@ -1,0 +1,10 @@
+﻿city_id,city_name,pair_id,expected_sign,units_total,same_sign_units,sign_reversal_units,insufficient_windows_units,undefined_units,all_four_units_same_sign,no_sign_reversal,all_selection_positive_at_both_scales,coverage80_positive_at_both_scales,spearman_weighted_direction_agreement_all_defined
+P001,Beijing,BUILDING_HEIGHT,POSITIVE,4,4,0,0,0,True,True,True,True,True
+P001,Beijing,BUILDING_ROAD,POSITIVE,4,4,0,0,0,True,True,True,True,True
+P001,Beijing,ROAD_HEIGHT,POSITIVE,4,4,0,0,0,True,True,True,True,True
+P003,Guangzhou,BUILDING_HEIGHT,POSITIVE,4,4,0,0,0,True,True,True,True,True
+P003,Guangzhou,BUILDING_ROAD,POSITIVE,4,4,0,0,0,True,True,True,True,True
+P003,Guangzhou,ROAD_HEIGHT,POSITIVE,4,4,0,0,0,True,True,True,True,True
+P005,Wuhan,BUILDING_HEIGHT,POSITIVE,4,4,0,0,0,True,True,True,True,True
+P005,Wuhan,BUILDING_ROAD,POSITIVE,4,4,0,0,0,True,True,True,True,True
+P005,Wuhan,ROAD_HEIGHT,POSITIVE,4,4,0,0,0,True,True,True,True,True

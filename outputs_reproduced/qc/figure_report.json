@@ -1,0 +1,30 @@
+{
+  "step": "04_make_supplementary_figures",
+  "status": "PASS",
+  "figure_qc": "PASS",
+  "figures": {
+    "Supplementary Figure S1": {
+      "stem": "Fig_S1_city_level_sensitivity",
+      "assessment_title": "City-level signed sensitivity structure",
+      "files": {
+        "png": "outputs_reproduced\\figures\\Fig_S1_city_level_sensitivity.png",
+        "pdf": "outputs_reproduced\\figures\\Fig_S1_city_level_sensitivity.pdf",
+        "svg": "outputs_reproduced\\figures\\Fig_S1_city_level_sensitivity.svg"
+      }
+    },
+    "Supplementary Figure S2": {
+      "stem": "Fig_S2_cross_city_dispersion",
+      "assessment_title": "Cross-city coefficient dispersion",
+      "files": {
+        "png": "outputs_reproduced\\figures\\Fig_S2_cross_city_dispersion.png",
+        "pdf": "outputs_reproduced\\figures\\Fig_S2_cross_city_dispersion.pdf",
+        "svg": "outputs_reproduced\\figures\\Fig_S2_cross_city_dispersion.svg"
+      }
+    }
+  },
+  "figure_manifest": "outputs_reproduced\\qc\\manifest.json",
+  "figure_captions": "outputs_reproduced\\qc\\figure_captions.md",
+  "figure_data_audit": "outputs_reproduced\\qc\\figure_data_audit.json",
+  "figure_qc_report": "outputs_reproduced\\qc\\figure_qc.json",
+  "figures_generated": 4
+}

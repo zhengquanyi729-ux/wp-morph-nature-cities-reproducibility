@@ -1,0 +1,59 @@
+{
+  "work_package": "WP-MORPH-03",
+  "status": "NONPRODUCTION_EXPLORATORY",
+  "run_id": "20260925_091713_378174",
+  "source_directory": "C:\\china_meld\\experiments\\wp_morph02b_nonproduction\\run_20260925_091105_413694",
+  "source_manifest_sha256": "00142170B2BC59FF88A844DBC63FBA4B03F7A631842F5929ABE88F111F07FE3B",
+  "script_path": "C:\\china_meld\\experiments\\wp_morph01_nonproduction\\run_wp_morph03.py",
+  "script_sha256_at_run": "06160D33D307BE7698C97419A77A60B8DD5DF2C863AC106EC84E24CDBB3F728F",
+  "registered_scales": {
+    "1km": {
+      "nominal_area_m2": 1000000.0,
+      "expected_windows": {
+        "P004": 1914,
+        "P026": 1931,
+        "P037": 666
+      }
+    },
+    "5km": {
+      "nominal_area_m2": 25000000.0,
+      "expected_windows": {
+        "P004": 101,
+        "P026": 127,
+        "P037": 47
+      }
+    }
+  },
+  "registered_variables": [
+    "building_coverage_mean",
+    "road_density_mean_km_per_km2",
+    "height_conditional_mean_m"
+  ],
+  "registered_pairs": [
+    [
+      "building_coverage_mean",
+      "road_density_mean_km_per_km2"
+    ],
+    [
+      "building_coverage_mean",
+      "height_conditional_mean_m"
+    ],
+    [
+      "road_density_mean_km_per_km2",
+      "height_conditional_mean_m"
+    ]
+  ],
+  "registered_selections": {
+    "ALL": 0.0,
+    "COVERAGE_80": 0.8
+  },
+  "minimum_valid_windows": 10,
+  "output_hashes": {
+    "pairwise_relations.csv": "34AD797084524C5FC471877B4A8B7011B54FAAECF0DA58ECCF07D9655C922920",
+    "window_coverage_diagnostics.csv": "9153CFCF91E1E68C96FFFBD57375E18DAEA642B4112F76F6BA06E12DDE997F22",
+    "cross_scale_stability.csv": "BA5E3949A0014D19F05E9AD4EB3465812CD63D51781926BFF475B35EA1C73444",
+    "qc_summary.json": "462A26477CE094052CEA5BAEC065D95FA4967A0B659B587DBA9FD71D1B43FC36"
+  },
+  "overall_qc": "PASS",
+  "formal_canu_gates_changed": false
+}

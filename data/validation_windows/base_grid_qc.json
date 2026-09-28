@@ -1,0 +1,50 @@
+{
+  "work_package": "WP-MORPH-05A",
+  "records": [
+    {
+      "city_id": "P001",
+      "rows": 1549100,
+      "unique_grid_indices": 1549100,
+      "effective_area_m2_sum": 3855436299.7012577,
+      "building_covered_area_m2_sum": 420388921.1618547,
+      "road_length_m_sum": 40395698.43003566,
+      "supported_height_area_m2_sum": 421085855.05747366,
+      "valid_height_support_rows": 723044,
+      "optional_checks": {
+        "building_coverage_fraction_max_abs_diff": 0.0,
+        "road_density_max_abs_diff": 0.0
+      },
+      "base_grid_qc": "PASS"
+    },
+    {
+      "city_id": "P003",
+      "rows": 1120912,
+      "unique_grid_indices": 1120912,
+      "effective_area_m2_sum": 2783612044.5265756,
+      "building_covered_area_m2_sum": 292328131.765364,
+      "road_length_m_sum": 23801359.503719177,
+      "supported_height_area_m2_sum": 293386960.987005,
+      "valid_height_support_rows": 504646,
+      "optional_checks": {
+        "building_coverage_fraction_max_abs_diff": 0.0,
+        "road_density_max_abs_diff": 0.0
+      },
+      "base_grid_qc": "PASS"
+    },
+    {
+      "city_id": "P005",
+      "rows": 736089,
+      "unique_grid_indices": 736089,
+      "effective_area_m2_sum": 1827067833.6466115,
+      "building_covered_area_m2_sum": 173609510.9254282,
+      "road_length_m_sum": 13883914.913497195,
+      "supported_height_area_m2_sum": 173922503.24940732,
+      "valid_height_support_rows": 307080,
+      "optional_checks": {
+        "building_coverage_fraction_max_abs_diff": 0.0,
+        "road_density_max_abs_diff": 0.0
+      },
+      "base_grid_qc": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "step": "03_make_main_figures",
+  "status": "PASS",
+  "figures": {
+    "Figure 2": {
+      "stem": "Fig_main_1_direction_magnitude",
+      "assessment_title": "Directional reproducibility and magnitude concordance",
+      "files": {
+        "png": "outputs_reproduced\\figures\\Fig_main_1_direction_magnitude.png",
+        "pdf": "outputs_reproduced\\figures\\Fig_main_1_direction_magnitude.pdf",
+        "svg": "outputs_reproduced\\figures\\Fig_main_1_direction_magnitude.svg"
+      }
+    },
+    "Figure 3": {
+      "stem": "Fig_main_2_robustness_structure",
+      "assessment_title": "Relationship-specific robustness structure",
+      "files": {
+        "png": "outputs_reproduced\\figures\\Fig_main_2_robustness_structure.png",
+        "pdf": "outputs_reproduced\\figures\\Fig_main_2_robustness_structure.pdf",
+        "svg": "outputs_reproduced\\figures\\Fig_main_2_robustness_structure.svg"
+      }
+    }
+  },
+  "figure_files": {
+    "Fig_main_1_direction_magnitude": {
+      "png": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\outputs_reproduced\\figures\\Fig_main_1_direction_magnitude.png",
+      "pdf": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\outputs_reproduced\\figures\\Fig_main_1_direction_magnitude.pdf",
+      "svg": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\outputs_reproduced\\figures\\Fig_main_1_direction_magnitude.svg"
+    },
+    "Fig_main_2_robustness_structure": {
+      "png": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\outputs_reproduced\\figures\\Fig_main_2_robustness_structure.png",
+      "pdf": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\outputs_reproduced\\figures\\Fig_main_2_robustness_structure.pdf",
+      "svg": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\outputs_reproduced\\figures\\Fig_main_2_robustness_structure.svg"
+    }
+  },
+  "audit_entries": [
+    {
+      "figure": "Figure 1",
+      "panel": "A",
+      "source_file": "01_directional_concordance.csv",
+      "source_columns": [
+        "relationship",
+        "validation_unit_count",
+        "same_sign_count",
+        "sign_reversal_count"
+      ],
+      "row_filter": "all rows; relationship order BUILDING_ROAD, BUILDING_HEIGHT, ROAD_HEIGHT",
+      "row_count_used": 3,
+      "any_new_metric_computed": false
+    },
+    {
+      "figure": "Figure 1",
+      "panel": "B",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": [
+        "relationship",
+        "scale",
+        "selection",
+        "metric",
+        "exploration_median",
+        "exploration_min",
+        "exploration_max",
+        "validation_median",
+        "validation_min",
+        "validation_max"
+      ],
+      "row_filter": "relationship == BUILDING_ROAD (8 of 24 rows; fixed scale/selection/metric order)",
+      "row_count_used": 8,
+      "any_new_metric_computed": false
+    },
+    {
+      "figure": "Figure 1",
+      "panel": "C",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": [
+        "relationship",
+        "scale",
+        "selection",
+        "metric",
+        "exploration_median",
+        "exploration_min",
+        "exploration_max",
+        "validation_median",
+        "validation_min",
+        "validation_max"
+      ],
+      "row_filter": "relationship == BUILDING_HEIGHT (8 of 24 rows; fixed scale/selection/metric order)",
+      "row_count_used": 8,
+      "any_new_metric_computed": false
+    },
+    {
+      "figure": "Figure 1",
+      "panel": "D",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": [
+        "relationship",
+        "scale",
+        "selection",
+        "metric",
+        "exploration_median",
+        "exploration_min",
+        "exploration_max",
+        "validation_median",
+        "validation_min",
+        "validation_max"
+      ],
+      "row_filter": "relationship == ROAD_HEIGHT (8 of 24 rows; fixed scale/selection/metric order)",
+      "row_count_used": 8,
+      "any_new_metric_computed": false
+    },
+    {
+      "figure": "Figure 2",
+      "panel": "Exploration",
+      "source_file": "04_relationship_robustness_profile.csv",
+      "source_columns": [
+        "phase",
+        "relationship",
+        "median_abs_scale_delta",
+        "median_abs_coverage_delta",
+        "median_abs_metric_delta"
+      ],
+      "row_filter": "phase == EXPLORATION (3 of 6 rows; relationship order fixed)",
+      "row_count_used": 3,
+      "any_new_metric_computed": false
+    },
+    {
+      "figure": "Figure 2",
+      "panel": "Validation",
+      "source_file": "04_relationship_robustness_profile.csv",
+      "source_columns": [
+        "phase",
+        "relationship",
+        "median_abs_scale_delta",
+        "median_abs_coverage_delta",
+        "median_abs_metric_delta"
+      ],
+      "row_filter": "phase == VALIDATION (3 of 6 rows; relationship order fixed)",
+      "row_count_used": 3,
+      "any_new_metric_computed": false
+    }
+  ],
+  "shared_xlim": [
+    0.0,
+    0.9
+  ],
+  "figure2_presentation": {
+    "colour_scale": "single-hue sequential, shared vmin/vmax across both panels",
+    "vmin": 0.0,
+    "vmax": 0.237048499457,
+    "note": "presentation parameter only; no statistic recomputed"
+  },
+  "source_files_verified": [
+    "01_directional_concordance.csv",
+    "02_exploration_validation_magnitude_summary.csv",
+    "03_scale_coverage_metric_sensitivity.csv",
+    "04_relationship_robustness_profile.csv"
+  ]
+}

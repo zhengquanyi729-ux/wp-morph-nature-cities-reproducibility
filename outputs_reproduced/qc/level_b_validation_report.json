@@ -1,0 +1,66 @@
+{
+  "step": "01_reproduce_validation",
+  "level": "B",
+  "status": "PASS",
+  "raw_50m_data_read": false,
+  "validation_unit_count": 36,
+  "classification_counts": {
+    "SAME_SIGN": 36,
+    "SIGN_REVERSAL": 0,
+    "INSUFFICIENT_WINDOWS": 0,
+    "UNDEFINED": 0
+  },
+  "byte_identical_to_frozen": true,
+  "reproduced_files": {
+    "validation_correlations.csv": "outputs_reproduced\\tables\\validation_correlations.csv",
+    "validation_direction_checks.csv": "outputs_reproduced\\tables\\validation_direction_checks.csv",
+    "validation_summary_by_city.csv": "outputs_reproduced\\tables\\validation_summary_by_city.csv",
+    "validation_hypothesis_summary.csv": "outputs_reproduced\\tables\\validation_hypothesis_summary.csv"
+  },
+  "comparisons": {
+    "validation_correlations.csv": {
+      "reproduced_file": "validation_correlations.csv",
+      "reproduced_sha256": "B0A2CCCB5B42DAEED12B51CDC129F681FC05946B3C42A11065E97CC10E35E75B",
+      "frozen_sha256": "B0A2CCCB5B42DAEED12B51CDC129F681FC05946B3C42A11065E97CC10E35E75B",
+      "byte_identical": true,
+      "row_count_reproduced": 36,
+      "row_count_frozen": 36,
+      "columns_match": true,
+      "values_match": true,
+      "status": "PASS"
+    },
+    "validation_direction_checks.csv": {
+      "reproduced_file": "validation_direction_checks.csv",
+      "reproduced_sha256": "15E31E50CAAB5F6A786209BBBB8C1249EB4AB8F39E00601038046946CEE880E3",
+      "frozen_sha256": "15E31E50CAAB5F6A786209BBBB8C1249EB4AB8F39E00601038046946CEE880E3",
+      "byte_identical": true,
+      "row_count_reproduced": 36,
+      "row_count_frozen": 36,
+      "columns_match": true,
+      "values_match": true,
+      "status": "PASS"
+    },
+    "validation_summary_by_city.csv": {
+      "reproduced_file": "validation_summary_by_city.csv",
+      "reproduced_sha256": "2280D081A347AC1053872A2C167940E37DA4471E2B2D3326A7734FC53AD92B1F",
+      "frozen_sha256": "2280D081A347AC1053872A2C167940E37DA4471E2B2D3326A7734FC53AD92B1F",
+      "byte_identical": true,
+      "row_count_reproduced": 9,
+      "row_count_frozen": 9,
+      "columns_match": true,
+      "values_match": true,
+      "status": "PASS"
+    },
+    "validation_hypothesis_summary.csv": {
+      "reproduced_file": "validation_hypothesis_summary.csv",
+      "reproduced_sha256": "9CB157A722913EBD88ED7D3103E38DBE704BCA816338613944C92D3ABCCEF7C5",
+      "frozen_sha256": "9CB157A722913EBD88ED7D3103E38DBE704BCA816338613944C92D3ABCCEF7C5",
+      "byte_identical": true,
+      "row_count_reproduced": 3,
+      "row_count_frozen": 3,
+      "columns_match": true,
+      "values_match": true,
+      "status": "PASS"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "step": "02_reproduce_synthesis",
+  "level": "A",
+  "status": "PASS",
+  "coefficients_reestimated": false,
+  "raw_50m_data_read": false,
+  "validation_unit_count": 36,
+  "same_sign_units": 36,
+  "sign_reversal_units": 0,
+  "insufficient_windows_units": 0,
+  "undefined_units": 0,
+  "canonical_coefficient_rows": 144,
+  "byte_identical_to_frozen": true,
+  "reproduced_files": {
+    "01_directional_concordance.csv": "outputs_reproduced\\tables\\01_directional_concordance.csv",
+    "02_exploration_validation_magnitude_summary.csv": "outputs_reproduced\\tables\\02_exploration_validation_magnitude_summary.csv",
+    "03_scale_coverage_metric_sensitivity.csv": "outputs_reproduced\\tables\\03_scale_coverage_metric_sensitivity.csv",
+    "04_relationship_robustness_profile.csv": "outputs_reproduced\\tables\\04_relationship_robustness_profile.csv"
+  },
+  "reproduced_hashes": {
+    "01_directional_concordance.csv": "6DF36B770F23A2F49445156B5F7D881AECEF6B2B48239856F96098DBAC48EFC2",
+    "02_exploration_validation_magnitude_summary.csv": "648F7B5412DA4DEC94C22D41A71E0CA194444E838B54C50E447CB2E318FBD98C",
+    "03_scale_coverage_metric_sensitivity.csv": "8012B2B3CAD38E4AAA19A9DA91E49F362A77BC023646AFBCE5BDC6402A0CD082",
+    "04_relationship_robustness_profile.csv": "6ED93EF7528BE61924E1421E26BD77A83ECE54C3DFF4A6C41536B42AA2D7A494"
+  },
+  "comparisons": {
+    "01_directional_concordance.csv": {
+      "reproduced_file": "01_directional_concordance.csv",
+      "reproduced_sha256": "6DF36B770F23A2F49445156B5F7D881AECEF6B2B48239856F96098DBAC48EFC2",
+      "frozen_sha256": "6DF36B770F23A2F49445156B5F7D881AECEF6B2B48239856F96098DBAC48EFC2",
+      "byte_identical": true,
+      "row_count_reproduced": 3,
+      "row_count_frozen": 3,
+      "columns_match": true,
+      "values_match": true,
+      "status": "PASS"
+    },
+    "02_exploration_validation_magnitude_summary.csv": {
+      "reproduced_file": "02_exploration_validation_magnitude_summary.csv",
+      "reproduced_sha256": "648F7B5412DA4DEC94C22D41A71E0CA194444E838B54C50E447CB2E318FBD98C",
+      "frozen_sha256": "648F7B5412DA4DEC94C22D41A71E0CA194444E838B54C50E447CB2E318FBD98C",
+      "byte_identical": true,
+      "row_count_reproduced": 24,
+      "row_count_frozen": 24,
+      "columns_match": true,
+      "values_match": true,
+      "status": "PASS"
+    },
+    "03_scale_coverage_metric_sensitivity.csv": {
+      "reproduced_file": "03_scale_coverage_metric_sensitivity.csv",
+      "reproduced_sha256": "8012B2B3CAD38E4AAA19A9DA91E49F362A77BC023646AFBCE5BDC6402A0CD082",
+      "frozen_sha256": "8012B2B3CAD38E4AAA19A9DA91E49F362A77BC023646AFBCE5BDC6402A0CD082",
+      "byte_identical": true,
+      "row_count_reproduced": 216,
+      "row_count_frozen": 216,
+      "columns_match": true,
+      "values_match": true,
+      "status": "PASS"
+    },
+    "04_relationship_robustness_profile.csv": {
+      "reproduced_file": "04_relationship_robustness_profile.csv",
+      "reproduced_sha256": "6ED93EF7528BE61924E1421E26BD77A83ECE54C3DFF4A6C41536B42AA2D7A494",
+      "frozen_sha256": "6ED93EF7528BE61924E1421E26BD77A83ECE54C3DFF4A6C41536B42AA2D7A494",
+      "byte_identical": true,
+      "row_count_reproduced": 6,
+      "row_count_frozen": 6,
+      "columns_match": true,
+      "values_match": true,
+      "status": "PASS"
+    }
+  }
+}

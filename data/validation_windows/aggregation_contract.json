@@ -1,0 +1,32 @@
+{
+  "contract_id": "WP-MORPH-05A-AGGREGATION-V1",
+  "status": "FROZEN_BEFORE_RELATIONSHIP_ANALYSIS",
+  "base_grid_cell_size_m": 50,
+  "spatial_scales": {
+    "1km": {
+      "block_cells": 20,
+      "nominal_window_size_m": 1000,
+      "nominal_window_area_m2": 1000000
+    },
+    "5km": {
+      "block_cells": 100,
+      "nominal_window_size_m": 5000,
+      "nominal_window_area_m2": 25000000
+    }
+  },
+  "window_index_rule": "window_row=floor(grid_row/block_cells); window_col=floor(grid_col/block_cells)",
+  "selections": {
+    "ALL": "all generated windows",
+    "COVERAGE_80": "effective_area_fraction >= 0.80"
+  },
+  "coverage_80_threshold": 0.8,
+  "variables": {
+    "building_coverage_mean": "sum(building_covered_area_m2) / sum(effective_area_m2)",
+    "road_density_mean_km_per_km2": "(sum(road_length_m)/1000) / (sum(effective_area_m2)/1e6)",
+    "height_conditional_mean_m": "weighted mean of building_height_main_m using supported_building_overlap_area_m2 as weights among valid supported-height cells"
+  },
+  "height_missing_rule": "Height missingness remains missing. No missing height is converted to zero.",
+  "relationship_statistics_computed": false,
+  "correlations_computed": false,
+  "formal_canu_gates_changed": false
+}

@@ -1,0 +1,4 @@
+﻿pair_id,x_variable,y_variable,expected_sign,weight_variable,validation_units_total,same_sign_units,sign_reversal_units,insufficient_windows_units,undefined_units,cities_all_four_units_same_sign,cities_no_sign_reversal,all_cities_all_selection_both_scales_same_sign,all_cities_coverage80_both_scales_same_sign,all_12_units_same_sign,any_sign_reversal,all_defined_coefficients_direction_agree
+BUILDING_ROAD,building_coverage_mean,road_density_mean_km_per_km2,POSITIVE,effective_area_m2,12,12,0,0,0,3,3,True,True,True,False,True
+BUILDING_HEIGHT,building_coverage_mean,height_conditional_mean_m,POSITIVE,height_valid_area_m2,12,12,0,0,0,3,3,True,True,True,False,True
+ROAD_HEIGHT,road_density_mean_km_per_km2,height_conditional_mean_m,POSITIVE,height_valid_area_m2,12,12,0,0,0,3,3,True,True,True,False,True

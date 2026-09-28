@@ -1,0 +1,253 @@
+{
+  "work_package": "WP-MORPH-05D",
+  "stage": "FROZEN_RESULT_FIGURE_PRODUCTION",
+  "script_version": "WP-MORPH-05D-FIGURE-PRODUCTION-V1",
+  "revision": "PRESENTATION_ONLY_REVISION_V1",
+  "revision_scope": "visualisation only: no frozen value, summary quantity, row order, relationship order, scale, selection, metric or analytical condition was changed, added, filtered or ranked",
+  "source_run": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\data\\frozen_inputs\\synthesis",
+  "generated_at": "2026-09-28T22:05:33",
+  "any_new_metric_computed_all_false": true,
+  "entries": [
+    {
+      "figure": "Figure 1",
+      "panel": "A",
+      "source_file": "01_directional_concordance.csv",
+      "source_columns": [
+        "relationship",
+        "validation_unit_count",
+        "same_sign_count",
+        "sign_reversal_count"
+      ],
+      "row_filter": "all rows; relationship order BUILDING_ROAD, BUILDING_HEIGHT, ROAD_HEIGHT",
+      "row_count_used": 3,
+      "any_new_metric_computed": false
+    },
+    {
+      "figure": "Figure 1",
+      "panel": "B",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": [
+        "relationship",
+        "scale",
+        "selection",
+        "metric",
+        "exploration_median",
+        "exploration_min",
+        "exploration_max",
+        "validation_median",
+        "validation_min",
+        "validation_max"
+      ],
+      "row_filter": "relationship == BUILDING_ROAD (8 of 24 rows; fixed scale/selection/metric order)",
+      "row_count_used": 8,
+      "any_new_metric_computed": false
+    },
+    {
+      "figure": "Figure 1",
+      "panel": "C",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": [
+        "relationship",
+        "scale",
+        "selection",
+        "metric",
+        "exploration_median",
+        "exploration_min",
+        "exploration_max",
+        "validation_median",
+        "validation_min",
+        "validation_max"
+      ],
+      "row_filter": "relationship == BUILDING_HEIGHT (8 of 24 rows; fixed scale/selection/metric order)",
+      "row_count_used": 8,
+      "any_new_metric_computed": false
+    },
+    {
+      "figure": "Figure 1",
+      "panel": "D",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": [
+        "relationship",
+        "scale",
+        "selection",
+        "metric",
+        "exploration_median",
+        "exploration_min",
+        "exploration_max",
+        "validation_median",
+        "validation_min",
+        "validation_max"
+      ],
+      "row_filter": "relationship == ROAD_HEIGHT (8 of 24 rows; fixed scale/selection/metric order)",
+      "row_count_used": 8,
+      "any_new_metric_computed": false
+    },
+    {
+      "figure": "Figure 2",
+      "panel": "Exploration",
+      "source_file": "04_relationship_robustness_profile.csv",
+      "source_columns": [
+        "phase",
+        "relationship",
+        "median_abs_scale_delta",
+        "median_abs_coverage_delta",
+        "median_abs_metric_delta"
+      ],
+      "row_filter": "phase == EXPLORATION (3 of 6 rows; relationship order fixed)",
+      "row_count_used": 3,
+      "any_new_metric_computed": false
+    },
+    {
+      "figure": "Figure 2",
+      "panel": "Validation",
+      "source_file": "04_relationship_robustness_profile.csv",
+      "source_columns": [
+        "phase",
+        "relationship",
+        "median_abs_scale_delta",
+        "median_abs_coverage_delta",
+        "median_abs_metric_delta"
+      ],
+      "row_filter": "phase == VALIDATION (3 of 6 rows; relationship order fixed)",
+      "row_count_used": 3,
+      "any_new_metric_computed": false
+    },
+    {
+      "figure": "Supplementary Figure S1",
+      "panel": "A",
+      "source_file": "03_scale_coverage_metric_sensitivity.csv",
+      "source_columns": [
+        "phase",
+        "city_id",
+        "relationship",
+        "dimension",
+        "conditioning_scale_or_selection",
+        "metric",
+        "signed_delta"
+      ],
+      "row_filter": "dimension == SCALE; fixed city order (Exploration P004, P026, P037; Validation P001, P003, P005); fixed relationship order",
+      "row_count_used": 72,
+      "any_new_metric_computed": false
+    },
+    {
+      "figure": "Supplementary Figure S1",
+      "panel": "B",
+      "source_file": "03_scale_coverage_metric_sensitivity.csv",
+      "source_columns": [
+        "phase",
+        "city_id",
+        "relationship",
+        "dimension",
+        "conditioning_scale_or_selection",
+        "metric",
+        "signed_delta"
+      ],
+      "row_filter": "dimension == COVERAGE; fixed city order (Exploration P004, P026, P037; Validation P001, P003, P005); fixed relationship order",
+      "row_count_used": 72,
+      "any_new_metric_computed": false
+    },
+    {
+      "figure": "Supplementary Figure S1",
+      "panel": "C",
+      "source_file": "03_scale_coverage_metric_sensitivity.csv",
+      "source_columns": [
+        "phase",
+        "city_id",
+        "relationship",
+        "dimension",
+        "conditioning_scale_or_selection",
+        "metric",
+        "signed_delta"
+      ],
+      "row_filter": "dimension == METRIC; fixed city order (Exploration P004, P026, P037; Validation P001, P003, P005); fixed relationship order",
+      "row_count_used": 72,
+      "any_new_metric_computed": false
+    },
+    {
+      "figure": "Supplementary Figure S2",
+      "panel": "A",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": [
+        "relationship",
+        "scale",
+        "selection",
+        "metric",
+        "exploration_range",
+        "validation_range"
+      ],
+      "row_filter": "relationship == BUILDING_ROAD (8 of 24 rows; fixed scale/selection/metric order)",
+      "row_count_used": 8,
+      "any_new_metric_computed": false
+    },
+    {
+      "figure": "Supplementary Figure S2",
+      "panel": "B",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": [
+        "relationship",
+        "scale",
+        "selection",
+        "metric",
+        "exploration_range",
+        "validation_range"
+      ],
+      "row_filter": "relationship == BUILDING_HEIGHT (8 of 24 rows; fixed scale/selection/metric order)",
+      "row_count_used": 8,
+      "any_new_metric_computed": false
+    },
+    {
+      "figure": "Supplementary Figure S2",
+      "panel": "C",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": [
+        "relationship",
+        "scale",
+        "selection",
+        "metric",
+        "exploration_range",
+        "validation_range"
+      ],
+      "row_filter": "relationship == ROAD_HEIGHT (8 of 24 rows; fixed scale/selection/metric order)",
+      "row_count_used": 8,
+      "any_new_metric_computed": false
+    },
+    {
+      "figure": "Figure 3",
+      "panel": "shared colour scale",
+      "source_file": "04_relationship_robustness_profile.csv",
+      "source_columns": [
+        "median_abs_scale_delta",
+        "median_abs_coverage_delta",
+        "median_abs_metric_delta"
+      ],
+      "row_filter": "both phases (6 of 6 rows)",
+      "row_count_used": 6,
+      "any_new_metric_computed": false,
+      "presentation_parameters": {
+        "colour_scale": "single-hue sequential, shared vmin/vmax across both panels",
+        "vmin": 0.0,
+        "vmax": 0.237048499457,
+        "note": "presentation parameter only; no statistic recomputed"
+      }
+    },
+    {
+      "figure": "Supplementary Figure S2",
+      "panel": "x-axis limits",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": [
+        "exploration_range",
+        "validation_range"
+      ],
+      "row_filter": "all 24 analytical conditions across the three relationships",
+      "row_count_used": 24,
+      "any_new_metric_computed": false,
+      "presentation_parameters": {
+        "x_axis_limits": [
+          0.0,
+          0.6
+        ],
+        "note": "presentation parameter only; frozen ranges used as-is"
+      }
+    }
+  ]
+}

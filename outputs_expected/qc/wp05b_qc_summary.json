@@ -1,0 +1,39 @@
+{
+  "work_package": "WP-MORPH-05B",
+  "status": "VALIDATION_RELATIONSHIPS_COMPUTED_FROZEN_METHOD",
+  "method_contract_id": "WP-MORPH-05B-METHOD-V1",
+  "method_frozen_before_results_opened": true,
+  "script_sha256_before_results": "78E955CCAAA819826C44CEE9E5971B32374DCC9C93559D927F13A1ED9B017A54",
+  "script_sha256_after_results": "78E955CCAAA819826C44CEE9E5971B32374DCC9C93559D927F13A1ED9B017A54",
+  "script_unchanged_during_analysis": true,
+  "source_wp05a_hashes": {
+    "validation_windows_1km.csv": "957E03C91EA6901B6BE65E390F3A476B272054BDA11A7880F96281EC0FD51FA3",
+    "validation_windows_5km.csv": "4500A832DA4596C849303919DC5189E1503621481B2627DC7FB6B1064D68E878",
+    "aggregation_contract.json": "25D813627E5628BD49105F425CE701033D9BC558711DD22D9DF1A9F0D01041DB",
+    "validation_aggregation_freeze.json": "37D20E3586AE3BFA8A494B2122DBA4B597F507D2B6930FDF93FC7E1EDC60A059",
+    "manifest.json": "4A6123159C28E8FF17803C76A9B6FB2D0541EE44AA0B6429EE525630969C9C1A"
+  },
+  "authorized_city_ids": [
+    "P001",
+    "P003",
+    "P005"
+  ],
+  "validation_unit_count_expected": 36,
+  "validation_unit_count_actual": 36,
+  "same_sign_units": 36,
+  "sign_reversal_units": 0,
+  "insufficient_windows_units": 0,
+  "undefined_units": 0,
+  "p_values_computed": false,
+  "p_values_used_as_gate": false,
+  "ordinary_independent_window_inference_claimed": false,
+  "raw_parquet_files_read": false,
+  "only_five_wp05a_sources_read": true,
+  "NO_CITY_REMOVED_AFTER_RESULTS": true,
+  "NO_SCALE_REMOVED_AFTER_RESULTS": true,
+  "NO_SELECTION_REMOVED_AFTER_RESULTS": true,
+  "NO_PAIR_REMOVED_AFTER_RESULTS": true,
+  "NO_METHOD_CHANGED_AFTER_RESULTS": true,
+  "formal_canu_production_authorized": false,
+  "formal_canu_gates_changed": false
+}

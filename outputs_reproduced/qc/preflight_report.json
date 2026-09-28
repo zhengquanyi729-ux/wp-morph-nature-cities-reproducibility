@@ -1,0 +1,390 @@
+{
+  "step": "00_preflight",
+  "status": "PASS",
+  "input_hash_status": "PASS",
+  "files_checked": 36,
+  "expected_output_row_counts": {
+    "01_directional_concordance.csv": 3,
+    "02_exploration_validation_magnitude_summary.csv": 24,
+    "03_scale_coverage_metric_sensitivity.csv": 216,
+    "04_relationship_robustness_profile.csv": 6
+  },
+  "configuration_checks": {
+    "exploration_cities": true,
+    "validation_cities": true,
+    "scales": true,
+    "selections": true,
+    "relationships": true,
+    "metrics": true,
+    "minimum_pairwise_valid_windows": true,
+    "expected_sign": true,
+    "expected_validation_unit_count": true,
+    "formal_canu_production_authorized": true,
+    "formal_canu_gates": true,
+    "new_analysis_allowed": true,
+    "city_names": true
+  },
+  "records": [
+    {
+      "relative_path": "config/WP-MORPH-05C_FREEZE_RECORD.txt",
+      "role": "WP05C_FREEZE_RECORD",
+      "present": true,
+      "expected_size_bytes": 1412,
+      "expected_sha256": "299C11980737EAD0ED1126E3CF9C20D2CB61660FAA9A30EAB4CC7F6B7D29914E",
+      "actual_size_bytes": 1412,
+      "actual_sha256": "299C11980737EAD0ED1126E3CF9C20D2CB61660FAA9A30EAB4CC7F6B7D29914E",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "config/WP-MORPH-05C_METHOD_CONTRACT_V1.md",
+      "role": "WP05C_METHOD_CONTRACT",
+      "present": true,
+      "expected_size_bytes": 13895,
+      "expected_sha256": "936A3FB27990A2F1BEBFD976333E89B216086E4B9550B18B6454D8A47C2133D3",
+      "actual_size_bytes": 13895,
+      "actual_sha256": "936A3FB27990A2F1BEBFD976333E89B216086E4B9550B18B6454D8A47C2133D3",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/frozen_inputs/exploration/manifest.json",
+      "role": "WP03_MANIFEST",
+      "present": true,
+      "expected_size_bytes": 1895,
+      "expected_sha256": "19172709097F2BCE406A37BB7E46B62B74D868494993080E38D6601E04322EF3",
+      "actual_size_bytes": 1895,
+      "actual_sha256": "19172709097F2BCE406A37BB7E46B62B74D868494993080E38D6601E04322EF3",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/frozen_inputs/exploration/pairwise_relations.csv",
+      "role": "WP03_FROZEN_EXPLORATION_RESULT",
+      "present": true,
+      "expected_size_bytes": 7059,
+      "expected_sha256": "34AD797084524C5FC471877B4A8B7011B54FAAECF0DA58ECCF07D9655C922920",
+      "actual_size_bytes": 7059,
+      "actual_sha256": "34AD797084524C5FC471877B4A8B7011B54FAAECF0DA58ECCF07D9655C922920",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/frozen_inputs/exploration/qc_summary.json",
+      "role": "WP03_QC_SUMMARY",
+      "present": true,
+      "expected_size_bytes": 2309,
+      "expected_sha256": "462A26477CE094052CEA5BAEC065D95FA4967A0B659B587DBA9FD71D1B43FC36",
+      "actual_size_bytes": 2309,
+      "actual_sha256": "462A26477CE094052CEA5BAEC065D95FA4967A0B659B587DBA9FD71D1B43FC36",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/frozen_inputs/synthesis/01_directional_concordance.csv",
+      "role": "WP05C_DIRECTIONAL_CONCORDANCE",
+      "present": true,
+      "expected_size_bytes": 332,
+      "expected_sha256": "6DF36B770F23A2F49445156B5F7D881AECEF6B2B48239856F96098DBAC48EFC2",
+      "actual_size_bytes": 332,
+      "actual_sha256": "6DF36B770F23A2F49445156B5F7D881AECEF6B2B48239856F96098DBAC48EFC2",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/frozen_inputs/synthesis/02_exploration_validation_magnitude_summary.csv",
+      "role": "WP05C_MAGNITUDE_SUMMARY",
+      "present": true,
+      "expected_size_bytes": 6487,
+      "expected_sha256": "648F7B5412DA4DEC94C22D41A71E0CA194444E838B54C50E447CB2E318FBD98C",
+      "actual_size_bytes": 6487,
+      "actual_sha256": "648F7B5412DA4DEC94C22D41A71E0CA194444E838B54C50E447CB2E318FBD98C",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/frozen_inputs/synthesis/03_scale_coverage_metric_sensitivity.csv",
+      "role": "WP05C_SCALE_COVERAGE_METRIC_SENSITIVITY",
+      "present": true,
+      "expected_size_bytes": 31844,
+      "expected_sha256": "8012B2B3CAD38E4AAA19A9DA91E49F362A77BC023646AFBCE5BDC6402A0CD082",
+      "actual_size_bytes": 31844,
+      "actual_sha256": "8012B2B3CAD38E4AAA19A9DA91E49F362A77BC023646AFBCE5BDC6402A0CD082",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/frozen_inputs/synthesis/04_relationship_robustness_profile.csv",
+      "role": "WP05C_RELATIONSHIP_ROBUSTNESS_PROFILE",
+      "present": true,
+      "expected_size_bytes": 1168,
+      "expected_sha256": "6ED93EF7528BE61924E1421E26BD77A83ECE54C3DFF4A6C41536B42AA2D7A494",
+      "actual_size_bytes": 1168,
+      "actual_sha256": "6ED93EF7528BE61924E1421E26BD77A83ECE54C3DFF4A6C41536B42AA2D7A494",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/frozen_inputs/synthesis/manifest.json",
+      "role": "WP05C_MANIFEST",
+      "present": true,
+      "expected_size_bytes": 5497,
+      "expected_sha256": "4D698A85EA21EA2A8CD7E3697282B6EB67F1310EC7E19E0E5CAD55054A7968B4",
+      "actual_size_bytes": 5497,
+      "actual_sha256": "4D698A85EA21EA2A8CD7E3697282B6EB67F1310EC7E19E0E5CAD55054A7968B4",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/frozen_inputs/synthesis/method_contract.json",
+      "role": "WP05C_METHOD_CONTRACT_JSON",
+      "present": true,
+      "expected_size_bytes": 865,
+      "expected_sha256": "09CF4CD8D1D5D7F4557FF953ECFF90B62C6EC1707B5452FBBD3653EC168AFA02",
+      "actual_size_bytes": 865,
+      "actual_sha256": "09CF4CD8D1D5D7F4557FF953ECFF90B62C6EC1707B5452FBBD3653EC168AFA02",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/frozen_inputs/synthesis/qc_summary.json",
+      "role": "WP05C_QC_SUMMARY",
+      "present": true,
+      "expected_size_bytes": 1595,
+      "expected_sha256": "1D7A140497B6ABF9A02D07CA170BDF71F637A7593647CC6661D27BE33C6FDF43",
+      "actual_size_bytes": 1595,
+      "actual_sha256": "1D7A140497B6ABF9A02D07CA170BDF71F637A7593647CC6661D27BE33C6FDF43",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/frozen_inputs/validation/manifest.json",
+      "role": "WP05B_MANIFEST",
+      "present": true,
+      "expected_size_bytes": 2508,
+      "expected_sha256": "61BE71844EBD1BEB762FD3BF3954DB7DFC6371D9F8C772464FAF16BFB32FB7CE",
+      "actual_size_bytes": 2508,
+      "actual_sha256": "61BE71844EBD1BEB762FD3BF3954DB7DFC6371D9F8C772464FAF16BFB32FB7CE",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/frozen_inputs/validation/method_freeze.json",
+      "role": "WP05B_METHOD_FREEZE",
+      "present": true,
+      "expected_size_bytes": 3028,
+      "expected_sha256": "33DCC855C2C8F117D129A73EEBCF5E1B1361E5A05877BB32D1BB39A644098AA9",
+      "actual_size_bytes": 3028,
+      "actual_sha256": "33DCC855C2C8F117D129A73EEBCF5E1B1361E5A05877BB32D1BB39A644098AA9",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/frozen_inputs/validation/qc_summary.json",
+      "role": "WP05B_QC_SUMMARY",
+      "present": true,
+      "expected_size_bytes": 1767,
+      "expected_sha256": "8A0B398B4CCA02DFFEB291D70C02007E70CCBFAEE7D337A337800DBE3C3EC348",
+      "actual_size_bytes": 1767,
+      "actual_sha256": "8A0B398B4CCA02DFFEB291D70C02007E70CCBFAEE7D337A337800DBE3C3EC348",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/frozen_inputs/validation/validation_correlations.csv",
+      "role": "WP05B_VALIDATION_CORRELATIONS",
+      "present": true,
+      "expected_size_bytes": 7380,
+      "expected_sha256": "B0A2CCCB5B42DAEED12B51CDC129F681FC05946B3C42A11065E97CC10E35E75B",
+      "actual_size_bytes": 7380,
+      "actual_sha256": "B0A2CCCB5B42DAEED12B51CDC129F681FC05946B3C42A11065E97CC10E35E75B",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/frozen_inputs/validation/validation_direction_checks.csv",
+      "role": "WP05B_VALIDATION_DIRECTION_CHECKS",
+      "present": true,
+      "expected_size_bytes": 4794,
+      "expected_sha256": "15E31E50CAAB5F6A786209BBBB8C1249EB4AB8F39E00601038046946CEE880E3",
+      "actual_size_bytes": 4794,
+      "actual_sha256": "15E31E50CAAB5F6A786209BBBB8C1249EB4AB8F39E00601038046946CEE880E3",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/frozen_inputs/validation/validation_hypothesis_summary.csv",
+      "role": "WP05B_VALIDATION_HYPOTHESIS_SUMMARY",
+      "present": true,
+      "expected_size_bytes": 809,
+      "expected_sha256": "9CB157A722913EBD88ED7D3103E38DBE704BCA816338613944C92D3ABCCEF7C5",
+      "actual_size_bytes": 809,
+      "actual_sha256": "9CB157A722913EBD88ED7D3103E38DBE704BCA816338613944C92D3ABCCEF7C5",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/frozen_inputs/validation/validation_summary_by_city.csv",
+      "role": "WP05B_VALIDATION_SUMMARY_BY_CITY",
+      "present": true,
+      "expected_size_bytes": 948,
+      "expected_sha256": "2280D081A347AC1053872A2C167940E37DA4471E2B2D3326A7734FC53AD92B1F",
+      "actual_size_bytes": 948,
+      "actual_sha256": "2280D081A347AC1053872A2C167940E37DA4471E2B2D3326A7734FC53AD92B1F",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/validation_windows/aggregation_contract.json",
+      "role": "WP05A_AGGREGATION_CONTRACT",
+      "present": true,
+      "expected_size_bytes": 1273,
+      "expected_sha256": "25D813627E5628BD49105F425CE701033D9BC558711DD22D9DF1A9F0D01041DB",
+      "actual_size_bytes": 1273,
+      "actual_sha256": "25D813627E5628BD49105F425CE701033D9BC558711DD22D9DF1A9F0D01041DB",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/validation_windows/aggregation_qc.json",
+      "role": "WP05A_AGGREGATION_QC",
+      "present": true,
+      "expected_size_bytes": 2794,
+      "expected_sha256": "9D58988D289DCD55341304CC95E792C4319C7764C2FA98A476CD60889EA802C2",
+      "actual_size_bytes": 2794,
+      "actual_sha256": "9D58988D289DCD55341304CC95E792C4319C7764C2FA98A476CD60889EA802C2",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/validation_windows/base_grid_qc.json",
+      "role": "WP05A_BASE_GRID_QC",
+      "present": true,
+      "expected_size_bytes": 1649,
+      "expected_sha256": "C8D2BE50A7BEC726EAFE9215A2076841C2E722CF92EAD2EA1D372502DAC96F71",
+      "actual_size_bytes": 1649,
+      "actual_sha256": "C8D2BE50A7BEC726EAFE9215A2076841C2E722CF92EAD2EA1D372502DAC96F71",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/validation_windows/manifest.json",
+      "role": "WP05A_MANIFEST",
+      "present": true,
+      "expected_size_bytes": 1917,
+      "expected_sha256": "4A6123159C28E8FF17803C76A9B6FB2D0541EE44AA0B6429EE525630969C9C1A",
+      "actual_size_bytes": 1917,
+      "actual_sha256": "4A6123159C28E8FF17803C76A9B6FB2D0541EE44AA0B6429EE525630969C9C1A",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/validation_windows/qc_summary.json",
+      "role": "WP05A_QC_SUMMARY",
+      "present": true,
+      "expected_size_bytes": 790,
+      "expected_sha256": "ABAEA56C7806F4B7874C96FE07DF437C55C8362536CD52C16222BB14F6B79EE3",
+      "actual_size_bytes": 790,
+      "actual_sha256": "ABAEA56C7806F4B7874C96FE07DF437C55C8362536CD52C16222BB14F6B79EE3",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/validation_windows/validation_aggregation_freeze.json",
+      "role": "WP05A_VALIDATION_AGGREGATION_FREEZE",
+      "present": true,
+      "expected_size_bytes": 591,
+      "expected_sha256": "37D20E3586AE3BFA8A494B2122DBA4B597F507D2B6930FDF93FC7E1EDC60A059",
+      "actual_size_bytes": 591,
+      "actual_sha256": "37D20E3586AE3BFA8A494B2122DBA4B597F507D2B6930FDF93FC7E1EDC60A059",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/validation_windows/validation_source_identity.csv",
+      "role": "WP05A_VALIDATION_SOURCE_IDENTITY",
+      "present": true,
+      "expected_size_bytes": 1306,
+      "expected_sha256": "69B86B0B89516C9E74F8C6A19CC79BE92B219ECAAF19B15A8C82325BEAF38EED",
+      "actual_size_bytes": 1306,
+      "actual_sha256": "69B86B0B89516C9E74F8C6A19CC79BE92B219ECAAF19B15A8C82325BEAF38EED",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/validation_windows/validation_windows_1km.csv",
+      "role": "WP05A_VALIDATION_WINDOWS_1KM",
+      "present": true,
+      "expected_size_bytes": 1540296,
+      "expected_sha256": "957E03C91EA6901B6BE65E390F3A476B272054BDA11A7880F96281EC0FD51FA3",
+      "actual_size_bytes": 1540296,
+      "actual_sha256": "957E03C91EA6901B6BE65E390F3A476B272054BDA11A7880F96281EC0FD51FA3",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/validation_windows/validation_windows_5km.csv",
+      "role": "WP05A_VALIDATION_WINDOWS_5KM",
+      "present": true,
+      "expected_size_bytes": 91281,
+      "expected_sha256": "4500A832DA4596C849303919DC5189E1503621481B2627DC7FB6B1064D68E878",
+      "actual_size_bytes": 91281,
+      "actual_sha256": "4500A832DA4596C849303919DC5189E1503621481B2627DC7FB6B1064D68E878",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "data/validation_windows/window_counts.csv",
+      "role": "WP05A_WINDOW_COUNTS",
+      "present": true,
+      "expected_size_bytes": 348,
+      "expected_sha256": "581BA69121F22EB292B9673F946B7E2CF3560520542724323CB4AF5F238416FA",
+      "actual_size_bytes": 348,
+      "actual_sha256": "581BA69121F22EB292B9673F946B7E2CF3560520542724323CB4AF5F238416FA",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "original_frozen_scripts/run_wp_morph03.py",
+      "role": "ORIGINAL_FROZEN_SCRIPT_WP03",
+      "present": true,
+      "expected_size_bytes": 34038,
+      "expected_sha256": "06160D33D307BE7698C97419A77A60B8DD5DF2C863AC106EC84E24CDBB3F728F",
+      "actual_size_bytes": 34038,
+      "actual_sha256": "06160D33D307BE7698C97419A77A60B8DD5DF2C863AC106EC84E24CDBB3F728F",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "original_frozen_scripts/run_wp_morph04h.py",
+      "role": "ORIGINAL_FROZEN_SCRIPT_WP04H",
+      "present": true,
+      "expected_size_bytes": 54576,
+      "expected_sha256": "29D07025007CD0826BA633048EB195275FEBDB6DF3B2B6A38B62E8762724D36E",
+      "actual_size_bytes": 54576,
+      "actual_sha256": "29D07025007CD0826BA633048EB195275FEBDB6DF3B2B6A38B62E8762724D36E",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "original_frozen_scripts/run_wp_morph05a.py",
+      "role": "ORIGINAL_FROZEN_SCRIPT_WP05A",
+      "present": true,
+      "expected_size_bytes": 52551,
+      "expected_sha256": "5B8255E3C5BA1EDA5904A6D227C61788CE0536F65BB453E551874AECCBCB5806",
+      "actual_size_bytes": 52551,
+      "actual_sha256": "5B8255E3C5BA1EDA5904A6D227C61788CE0536F65BB453E551874AECCBCB5806",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "original_frozen_scripts/run_wp_morph05b.py",
+      "role": "ORIGINAL_FROZEN_SCRIPT_WP05B",
+      "present": true,
+      "expected_size_bytes": 64112,
+      "expected_sha256": "78E955CCAAA819826C44CEE9E5971B32374DCC9C93559D927F13A1ED9B017A54",
+      "actual_size_bytes": 64112,
+      "actual_sha256": "78E955CCAAA819826C44CEE9E5971B32374DCC9C93559D927F13A1ED9B017A54",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "original_frozen_scripts/run_wp_morph05c_input_preflight_v1.py",
+      "role": "ORIGINAL_FROZEN_SCRIPT_WP05C_PREFLIGHT",
+      "present": true,
+      "expected_size_bytes": 18891,
+      "expected_sha256": "EFAA84ADD32BC27921A2E5A7296B5DD4186D2009588F38939A6D86DB2DDBEC29",
+      "actual_size_bytes": 18891,
+      "actual_sha256": "EFAA84ADD32BC27921A2E5A7296B5DD4186D2009588F38939A6D86DB2DDBEC29",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "original_frozen_scripts/run_wp_morph05c_synthesis_v1.py",
+      "role": "ORIGINAL_FROZEN_SCRIPT_WP05C_SYNTHESIS",
+      "present": true,
+      "expected_size_bytes": 34558,
+      "expected_sha256": "EA6A883787587A715486B2181ACFB518942003207A38A6CE8E660ED72DB51EDB",
+      "actual_size_bytes": 34558,
+      "actual_sha256": "EA6A883787587A715486B2181ACFB518942003207A38A6CE8E660ED72DB51EDB",
+      "status": "PASS"
+    },
+    {
+      "relative_path": "original_frozen_scripts/run_wp_morph05d_figures_v1.py",
+      "role": "ORIGINAL_FROZEN_SCRIPT_WP05D_FIGURES",
+      "present": true,
+      "expected_size_bytes": 57356,
+      "expected_sha256": "3AC43986484D37658092E163605349911F907F478D37384CC6CFBEDD9930A4CF",
+      "actual_size_bytes": 57356,
+      "actual_sha256": "3AC43986484D37658092E163605349911F907F478D37384CC6CFBEDD9930A4CF",
+      "status": "PASS"
+    }
+  ],
+  "failures": []
+}

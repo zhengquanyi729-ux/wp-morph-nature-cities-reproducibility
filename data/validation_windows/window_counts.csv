@@ -1,0 +1,7 @@
+﻿city_id,city_name,scale,window_count_all,window_count_coverage80,height_valid_window_count_all,height_valid_window_count_coverage80
+P001,Beijing,1km,4196,3728,4052,3693
+P001,Beijing,5km,205,129,205,129
+P003,Guangzhou,1km,3148,2626,2991,2605
+P003,Guangzhou,5km,177,80,175,80
+P005,Wuhan,1km,2089,1719,1947,1655
+P005,Wuhan,5km,126,50,124,50

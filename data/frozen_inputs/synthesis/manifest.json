@@ -1,0 +1,107 @@
+{
+  "work_package": "WP-MORPH-05C",
+  "title": "Exploration–Validation Concordance Synthesis",
+  "status": "NONPRODUCTION_SYNTHESIS",
+  "output_dir": "C:\\china_meld\\experiments\\wp_morph05c_nonproduction\\run_20260927_191608_791495",
+  "method_contract_id": "WP-MORPH-05C-METHOD-V1",
+  "method_contract_sha256": "936A3FB27990A2F1BEBFD976333E89B216086E4B9550B18B6454D8A47C2133D3",
+  "implementation_spec_id": "WP-MORPH-05C-IMPLEMENTATION-V1",
+  "script_path": "C:\\china_meld\\experiments\\wp_morph05c_nonproduction\\run_wp_morph05c_synthesis_v1.py",
+  "script_sha256_before_synthesis": "EA6A883787587A715486B2181ACFB518942003207A38A6CE8E660ED72DB51EDB",
+  "script_sha256_after_synthesis": "EA6A883787587A715486B2181ACFB518942003207A38A6CE8E660ED72DB51EDB",
+  "input_preflight": {
+    "role": "WP05C_INPUT_PREFLIGHT_REGISTRY",
+    "path": "C:\\china_meld\\experiments\\wp_morph05c_nonproduction\\input_preflight_20260927_191052_983557\\wp_morph05c_input_registry.json",
+    "file_name": "wp_morph05c_input_registry.json",
+    "size_bytes": 4742,
+    "sha256": "627B5368F9FA5E3EFEFCC445B6B4AD0EB63F6EE1B40F3838B08D3B1379F7422C"
+  },
+  "frozen_inputs": [
+    {
+      "role": "WP03_FROZEN_PAIRWISE_RESULT",
+      "path": "C:\\china_meld\\experiments\\wp_morph03_nonproduction\\run_20260925_091713_378174\\pairwise_relations.csv",
+      "file_name": "pairwise_relations.csv",
+      "size_bytes": 7059,
+      "sha256": "34AD797084524C5FC471877B4A8B7011B54FAAECF0DA58ECCF07D9655C922920",
+      "identity_gate": "PASS"
+    },
+    {
+      "role": "WP05B_VALIDATION_CORRELATIONS",
+      "path": "C:\\china_meld\\experiments\\wp_morph05b_nonproduction\\run_20260927_175641_020702\\validation_correlations.csv",
+      "file_name": "validation_correlations.csv",
+      "size_bytes": 7380,
+      "sha256": "B0A2CCCB5B42DAEED12B51CDC129F681FC05946B3C42A11065E97CC10E35E75B",
+      "identity_gate": "PASS"
+    },
+    {
+      "role": "WP05B_DIRECTION_CHECKS",
+      "path": "C:\\china_meld\\experiments\\wp_morph05b_nonproduction\\run_20260927_175641_020702\\validation_direction_checks.csv",
+      "file_name": "validation_direction_checks.csv",
+      "size_bytes": 4794,
+      "sha256": "15E31E50CAAB5F6A786209BBBB8C1249EB4AB8F39E00601038046946CEE880E3",
+      "identity_gate": "PASS"
+    },
+    {
+      "role": "WP05B_CITY_SUMMARY",
+      "path": "C:\\china_meld\\experiments\\wp_morph05b_nonproduction\\run_20260927_175641_020702\\validation_summary_by_city.csv",
+      "file_name": "validation_summary_by_city.csv",
+      "size_bytes": 948,
+      "sha256": "2280D081A347AC1053872A2C167940E37DA4471E2B2D3326A7734FC53AD92B1F",
+      "identity_gate": "PASS"
+    },
+    {
+      "role": "WP05B_HYPOTHESIS_SUMMARY",
+      "path": "C:\\china_meld\\experiments\\wp_morph05b_nonproduction\\run_20260927_175641_020702\\validation_hypothesis_summary.csv",
+      "file_name": "validation_hypothesis_summary.csv",
+      "size_bytes": 809,
+      "sha256": "9CB157A722913EBD88ED7D3103E38DBE704BCA816338613944C92D3ABCCEF7C5",
+      "identity_gate": "PASS"
+    }
+  ],
+  "generated_outputs": [
+    {
+      "role": "WP05C_OUTPUT_01_directional_concordance.csv",
+      "path": "C:\\china_meld\\experiments\\wp_morph05c_nonproduction\\run_20260927_191608_791495\\01_directional_concordance.csv",
+      "file_name": "01_directional_concordance.csv",
+      "size_bytes": 332,
+      "sha256": "6DF36B770F23A2F49445156B5F7D881AECEF6B2B48239856F96098DBAC48EFC2"
+    },
+    {
+      "role": "WP05C_OUTPUT_02_exploration_validation_magnitude_summary.csv",
+      "path": "C:\\china_meld\\experiments\\wp_morph05c_nonproduction\\run_20260927_191608_791495\\02_exploration_validation_magnitude_summary.csv",
+      "file_name": "02_exploration_validation_magnitude_summary.csv",
+      "size_bytes": 6487,
+      "sha256": "648F7B5412DA4DEC94C22D41A71E0CA194444E838B54C50E447CB2E318FBD98C"
+    },
+    {
+      "role": "WP05C_OUTPUT_03_scale_coverage_metric_sensitivity.csv",
+      "path": "C:\\china_meld\\experiments\\wp_morph05c_nonproduction\\run_20260927_191608_791495\\03_scale_coverage_metric_sensitivity.csv",
+      "file_name": "03_scale_coverage_metric_sensitivity.csv",
+      "size_bytes": 31844,
+      "sha256": "8012B2B3CAD38E4AAA19A9DA91E49F362A77BC023646AFBCE5BDC6402A0CD082"
+    },
+    {
+      "role": "WP05C_OUTPUT_04_relationship_robustness_profile.csv",
+      "path": "C:\\china_meld\\experiments\\wp_morph05c_nonproduction\\run_20260927_191608_791495\\04_relationship_robustness_profile.csv",
+      "file_name": "04_relationship_robustness_profile.csv",
+      "size_bytes": 1168,
+      "sha256": "6ED93EF7528BE61924E1421E26BD77A83ECE54C3DFF4A6C41536B42AA2D7A494"
+    },
+    {
+      "role": "WP05C_OUTPUT_method_contract.json",
+      "path": "C:\\china_meld\\experiments\\wp_morph05c_nonproduction\\run_20260927_191608_791495\\method_contract.json",
+      "file_name": "method_contract.json",
+      "size_bytes": 865,
+      "sha256": "09CF4CD8D1D5D7F4557FF953ECFF90B62C6EC1707B5452FBBD3653EC168AFA02"
+    },
+    {
+      "role": "WP05C_OUTPUT_qc_summary.json",
+      "path": "C:\\china_meld\\experiments\\wp_morph05c_nonproduction\\run_20260927_191608_791495\\qc_summary.json",
+      "file_name": "qc_summary.json",
+      "size_bytes": 1595,
+      "sha256": "1D7A140497B6ABF9A02D07CA170BDF71F637A7593647CC6661D27BE33C6FDF43"
+    }
+  ],
+  "formal_canu_production_authorized": false,
+  "formal_canu_gates": "UNCHANGED"
+}

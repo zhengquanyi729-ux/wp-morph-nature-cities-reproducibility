@@ -1,0 +1,32 @@
+{
+  "work_package": "WP-MORPH-05A",
+  "status": "NONPRODUCTION_VALIDATION_AGGREGATION",
+  "run_id": "20260927_174448_460493",
+  "source_wp04h_directory": "C:\\china_meld\\experiments\\wp_morph04h_nonproduction\\run_20260927_172509_532787",
+  "source_wp04h_manifest_sha256": "B7EE7BB504B538A714A3D5A9424393EC7802218AD3E9D1E76EBAB5608E5321C5",
+  "source_wp04h_nomination_sha256": "C4BCEEF39D82C7156650BD9A0DA720D2DC59A6377AB9D20D0AA85BDFCF11405F",
+  "authorized_city_ids": [
+    "P001",
+    "P003",
+    "P005"
+  ],
+  "script_path": "C:\\china_meld\\experiments\\wp_morph01_nonproduction\\run_wp_morph05a.py",
+  "script_sha256_at_run": "5B8255E3C5BA1EDA5904A6D227C61788CE0536F65BB453E551874AECCBCB5806",
+  "aggregation_contract_id": "WP-MORPH-05A-AGGREGATION-V1",
+  "relationship_statistics_computed": false,
+  "correlations_computed": false,
+  "wp_morph05b_execution_authorized": true,
+  "formal_canu_production_authorized": false,
+  "formal_canu_gates_changed": false,
+  "output_hashes": {
+    "aggregation_contract.json": "25D813627E5628BD49105F425CE701033D9BC558711DD22D9DF1A9F0D01041DB",
+    "validation_source_identity.csv": "69B86B0B89516C9E74F8C6A19CC79BE92B219ECAAF19B15A8C82325BEAF38EED",
+    "validation_windows_1km.csv": "957E03C91EA6901B6BE65E390F3A476B272054BDA11A7880F96281EC0FD51FA3",
+    "validation_windows_5km.csv": "4500A832DA4596C849303919DC5189E1503621481B2627DC7FB6B1064D68E878",
+    "window_counts.csv": "581BA69121F22EB292B9673F946B7E2CF3560520542724323CB4AF5F238416FA",
+    "base_grid_qc.json": "C8D2BE50A7BEC726EAFE9215A2076841C2E722CF92EAD2EA1D372502DAC96F71",
+    "aggregation_qc.json": "9D58988D289DCD55341304CC95E792C4319C7764C2FA98A476CD60889EA802C2",
+    "validation_aggregation_freeze.json": "37D20E3586AE3BFA8A494B2122DBA4B597F507D2B6930FDF93FC7E1EDC60A059",
+    "qc_summary.json": "ABAEA56C7806F4B7874C96FE07DF437C55C8362536CD52C16222BB14F6B79EE3"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "work_package": "WP-MORPH-05B",
+  "contract_id": "WP-MORPH-05B-METHOD-V1",
+  "status": "FROZEN_BEFORE_VALIDATION_RESULTS_OPENED",
+  "freeze_timestamp_utc": "2026-09-27T09:56:41+00:00",
+  "script_sha256_before_results": "78E955CCAAA819826C44CEE9E5971B32374DCC9C93559D927F13A1ED9B017A54",
+  "source_wp05a_hashes": {
+    "validation_windows_1km.csv": "957E03C91EA6901B6BE65E390F3A476B272054BDA11A7880F96281EC0FD51FA3",
+    "validation_windows_5km.csv": "4500A832DA4596C849303919DC5189E1503621481B2627DC7FB6B1064D68E878",
+    "aggregation_contract.json": "25D813627E5628BD49105F425CE701033D9BC558711DD22D9DF1A9F0D01041DB",
+    "validation_aggregation_freeze.json": "37D20E3586AE3BFA8A494B2122DBA4B597F507D2B6930FDF93FC7E1EDC60A059",
+    "manifest.json": "4A6123159C28E8FF17803C76A9B6FB2D0541EE44AA0B6429EE525630969C9C1A"
+  },
+  "authorized_city_ids": [
+    "P001",
+    "P003",
+    "P005"
+  ],
+  "scales": [
+    "1km",
+    "5km"
+  ],
+  "selections": [
+    "ALL",
+    "COVERAGE_80"
+  ],
+  "coverage_80_threshold": 0.8,
+  "minimum_pairwise_valid_windows": 10,
+  "expected_validation_unit_count": 36,
+  "pairs": [
+    {
+      "pair_id": "BUILDING_ROAD",
+      "x_variable": "building_coverage_mean",
+      "y_variable": "road_density_mean_km_per_km2",
+      "weight_variable": "effective_area_m2",
+      "expected_sign": "POSITIVE"
+    },
+    {
+      "pair_id": "BUILDING_HEIGHT",
+      "x_variable": "building_coverage_mean",
+      "y_variable": "height_conditional_mean_m",
+      "weight_variable": "height_valid_area_m2",
+      "expected_sign": "POSITIVE"
+    },
+    {
+      "pair_id": "ROAD_HEIGHT",
+      "x_variable": "road_density_mean_km_per_km2",
+      "y_variable": "height_conditional_mean_m",
+      "weight_variable": "height_valid_area_m2",
+      "expected_sign": "POSITIVE"
+    }
+  ],
+  "statistics": {
+    "spearman_rho": "Pearson correlation of average ranks on pairwise-finite x/y windows; no p-value",
+    "weighted_pearson_r": "weighted covariance divided by weighted standard deviations using frozen pair weight"
+  },
+  "reported_per_unit": [
+    "n_total_windows",
+    "n_pairwise_valid_windows",
+    "valid_effective_area_m2",
+    "spearman_rho",
+    "weighted_pearson_r"
+  ],
+  "classification_order": [
+    "INSUFFICIENT_WINDOWS if n_pairwise_valid_windows < 10",
+    "SIGN_REVERSAL if at least one defined coefficient < 0",
+    "SAME_SIGN if both coefficients are defined and > 0",
+    "UNDEFINED otherwise"
+  ],
+  "expected_sign": "POSITIVE for all three frozen WP03 candidate relationships",
+  "p_values_computed": false,
+  "p_values_used_as_gate": false,
+  "ordinary_independent_window_inference_claimed": false,
+  "raw_parquet_access": false,
+  "city_removal_after_results_allowed": false,
+  "scale_removal_after_results_allowed": false,
+  "selection_removal_after_results_allowed": false,
+  "pair_removal_after_results_allowed": false,
+  "method_change_after_results_allowed": false,
+  "formal_canu_gates_changed": false
+}

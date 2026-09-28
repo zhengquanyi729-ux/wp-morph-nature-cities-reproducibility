@@ -1,0 +1,113 @@
+{
+  "config_id": "WP-MORPH-NATURE-CITIES-REPRODUCIBILITY-CONFIG-V1",
+  "project": "WP-MORPH",
+  "manuscript_target": "Nature Cities",
+  "purpose": "Frozen scientific universe used to reproduce the manuscript-level morphology validation analyses.",
+  "scientific_results_frozen": true,
+  "new_analysis_allowed": false,
+
+  "exploration_cities": ["P004", "P026", "P037"],
+  "validation_cities": ["P001", "P003", "P005"],
+  "city_names": {
+    "P001": "Beijing",
+    "P003": "Guangzhou",
+    "P004": "Shenzhen",
+    "P005": "Wuhan",
+    "P026": "Luoyang",
+    "P037": "Xining"
+  },
+  "city_name_note": "City names are recorded only as trailing record labels. City names are not used in any computation. The frozen roster mapping was verified against the canonical city roster produced by the frozen validation-city nomination chain.",
+
+  "scales": ["1km", "5km"],
+  "scale_definition": {
+    "1km": "20 x 20 cells of 50 m",
+    "5km": "100 x 100 cells of 50 m"
+  },
+
+  "selections": ["ALL", "COVERAGE_80"],
+  "selection_definition": {
+    "ALL": "every frozen analysis window of that city and scale",
+    "COVERAGE_80": "windows with effective_area_fraction >= 0.80"
+  },
+  "coverage_80_threshold": 0.8,
+
+  "relationships": ["BUILDING_ROAD", "BUILDING_HEIGHT", "ROAD_HEIGHT"],
+
+  "metrics": ["SPEARMAN_RHO", "WEIGHTED_PEARSON_R"],
+
+  "minimum_pairwise_valid_windows": 10,
+  "expected_sign": "POSITIVE",
+
+  "relationship_mapping": {
+    "BUILDING_ROAD": {
+      "x_variable": "building_coverage_mean",
+      "y_variable": "road_density_mean_km_per_km2",
+      "weighted_pearson_weight_variable": "effective_area_m2"
+    },
+    "BUILDING_HEIGHT": {
+      "x_variable": "building_coverage_mean",
+      "y_variable": "height_conditional_mean_m",
+      "weighted_pearson_weight_variable": "height_valid_area_m2"
+    },
+    "ROAD_HEIGHT": {
+      "x_variable": "road_density_mean_km_per_km2",
+      "y_variable": "height_conditional_mean_m",
+      "weighted_pearson_weight_variable": "height_valid_area_m2"
+    }
+  },
+
+  "missing_height_rule": "A window without valid building-height support keeps a missing height value. Missing height is never replaced by zero and missing windows are never re-weighted or imputed.",
+
+  "validation_classification_order": [
+    "INSUFFICIENT_WINDOWS if n_pairwise_valid_windows < 10",
+    "SIGN_REVERSAL if at least one defined coefficient is negative",
+    "SAME_SIGN if Spearman rho > 0 and weighted Pearson r > 0",
+    "UNDEFINED otherwise (including zero or undefined coefficients after the minimum-window gate passes)"
+  ],
+
+  "statistic_definitions": {
+    "spearman_rho": "Pearson correlation of the average ranks of x and y over the pairwise-finite windows. No p-value is computed.",
+    "weighted_pearson_r": "Weighted covariance divided by the weighted standard deviations of x and y using the frozen relationship weight. No p-value is computed."
+  },
+
+  "quartile_method": "pandas Series.quantile with interpolation='linear'",
+
+  "synthesis_delta_definitions": {
+    "scale_delta": "coefficient_5km - coefficient_1km",
+    "coverage_delta": "coefficient_COVERAGE_80 - coefficient_ALL",
+    "metric_weighting_delta": "weighted_Pearson_r - Spearman_rho"
+  },
+  "synthesis_aggregates": [
+    "n_cities",
+    "median",
+    "Q1",
+    "Q3",
+    "minimum",
+    "maximum",
+    "range"
+  ],
+
+  "prohibited": [
+    "new thresholds",
+    "inferential testing",
+    "p-values",
+    "significance tests",
+    "composite robustness score",
+    "relationship ranking",
+    "raw 50 m data reads for the paper-reproduction level",
+    "coefficient re-estimation in the synthesis stage"
+  ],
+
+  "expected_validation_unit_count": 36,
+  "expected_validation_classification_counts": {
+    "SAME_SIGN": 36,
+    "SIGN_REVERSAL": 0,
+    "INSUFFICIENT_WINDOWS": 0,
+    "UNDEFINED": 0
+  },
+
+  "formal_canu_production_authorized": false,
+  "formal_canu_gates": "UNCHANGED",
+  "scientific_results_changed": false,
+  "new_analysis": false
+}

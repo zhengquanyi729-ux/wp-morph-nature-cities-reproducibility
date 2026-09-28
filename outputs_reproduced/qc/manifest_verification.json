@@ -1,0 +1,11 @@
+{
+  "step": "verify_manifest",
+  "status": "PASS",
+  "manifest_present": true,
+  "manifest_file": "MANIFEST_SHA256.csv",
+  "manifest_sha256": "35B01D37EA61BCF0F74C57449083FB8B45F598813A00885DF960C3F73DDB4D99",
+  "listed_files": 104,
+  "verified_files": 104,
+  "unlisted_files": [],
+  "failures": []
+}

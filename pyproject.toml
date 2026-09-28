@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wp-morph-nature-cities-reproducibility"
+version = "1.0.0"
+description = "Journal reproducibility package for the WP-MORPH constrained exploration-validation morphology analysis (Nature Cities submission)."
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = { text = "MIT" }
+dependencies = [
+    "numpy==2.4.6",
+    "pandas==3.0.5",
+    "matplotlib==3.11.1",
+]
+
+[project.optional-dependencies]
+tests = ["pytest==9.1.1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# The pytest cache provider is disabled so that a verification run can never
+# create files inside the distributed package content. `-q` is deliberately NOT
+# in addopts: the documented command is `pytest -q`, and doubling the quiet flag
+# would suppress the final "N passed" summary line.
+addopts = "-p no:cacheprovider"
+
+[tool.setuptools]
+py-modules = []

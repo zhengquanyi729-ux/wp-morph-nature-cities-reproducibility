@@ -1,0 +1,48 @@
+{
+  "work_package": "WP-MORPH-05B",
+  "status": "NONPRODUCTION_INDEPENDENT_VALIDATION_RELATIONSHIPS",
+  "run_id": "20260927_175641_020702",
+  "source_wp05a_directory": "C:\\china_meld\\experiments\\wp_morph05a_nonproduction\\run_20260927_174448_460493",
+  "source_files_read": [
+    "validation_windows_1km.csv",
+    "validation_windows_5km.csv",
+    "aggregation_contract.json",
+    "validation_aggregation_freeze.json",
+    "manifest.json"
+  ],
+  "source_wp05a_hashes": {
+    "validation_windows_1km.csv": "957E03C91EA6901B6BE65E390F3A476B272054BDA11A7880F96281EC0FD51FA3",
+    "validation_windows_5km.csv": "4500A832DA4596C849303919DC5189E1503621481B2627DC7FB6B1064D68E878",
+    "aggregation_contract.json": "25D813627E5628BD49105F425CE701033D9BC558711DD22D9DF1A9F0D01041DB",
+    "validation_aggregation_freeze.json": "37D20E3586AE3BFA8A494B2122DBA4B597F507D2B6930FDF93FC7E1EDC60A059",
+    "manifest.json": "4A6123159C28E8FF17803C76A9B6FB2D0541EE44AA0B6429EE525630969C9C1A"
+  },
+  "method_contract_id": "WP-MORPH-05B-METHOD-V1",
+  "script_path": "C:\\china_meld\\experiments\\wp_morph01_nonproduction\\run_wp_morph05b.py",
+  "script_sha256_before_results": "78E955CCAAA819826C44CEE9E5971B32374DCC9C93559D927F13A1ED9B017A54",
+  "script_sha256_after_results": "78E955CCAAA819826C44CEE9E5971B32374DCC9C93559D927F13A1ED9B017A54",
+  "authorized_city_ids": [
+    "P001",
+    "P003",
+    "P005"
+  ],
+  "expected_validation_units": 36,
+  "actual_validation_units": 36,
+  "p_values_computed": false,
+  "raw_parquet_files_read": false,
+  "NO_CITY_REMOVED_AFTER_RESULTS": true,
+  "NO_SCALE_REMOVED_AFTER_RESULTS": true,
+  "NO_SELECTION_REMOVED_AFTER_RESULTS": true,
+  "NO_PAIR_REMOVED_AFTER_RESULTS": true,
+  "NO_METHOD_CHANGED_AFTER_RESULTS": true,
+  "formal_canu_production_authorized": false,
+  "formal_canu_gates_changed": false,
+  "output_hashes": {
+    "method_freeze.json": "33DCC855C2C8F117D129A73EEBCF5E1B1361E5A05877BB32D1BB39A644098AA9",
+    "validation_correlations.csv": "B0A2CCCB5B42DAEED12B51CDC129F681FC05946B3C42A11065E97CC10E35E75B",
+    "validation_direction_checks.csv": "15E31E50CAAB5F6A786209BBBB8C1249EB4AB8F39E00601038046946CEE880E3",
+    "validation_summary_by_city.csv": "2280D081A347AC1053872A2C167940E37DA4471E2B2D3326A7734FC53AD92B1F",
+    "validation_hypothesis_summary.csv": "9CB157A722913EBD88ED7D3103E38DBE704BCA816338613944C92D3ABCCEF7C5",
+    "qc_summary.json": "8A0B398B4CCA02DFFEB291D70C02007E70CCBFAEE7D337A337800DBE3C3EC348"
+  }
+}

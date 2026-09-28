@@ -1,0 +1,13 @@
+name: wp-morph-repro
+channels:
+  - conda-forge
+dependencies:
+  # Conda provides the interpreter; the analysis stack is installed from the
+  # exact tested pins in requirements-lock.txt. Delegating the Python packages
+  # to pip keeps this environment identical to the verified `pytest -q` run and
+  # avoids solver conflicts when a pinned build is newer than the channel
+  # content.
+  - python=3.12
+  - pip
+  - pip:
+      - -r requirements-lock.txt

@@ -1,0 +1,9 @@
+{
+  "manifest_sha256_before": "35B01D37EA61BCF0F74C57449083FB8B45F598813A00885DF960C3F73DDB4D99",
+  "manifest_sha256_after_analysis": "35B01D37EA61BCF0F74C57449083FB8B45F598813A00885DF960C3F73DDB4D99",
+  "distribution_manifest_immutable_during_run": true,
+  "modified_distributed_files": [],
+  "run_all_modifies_only_outputs_reproduced": true,
+  "distributed_files_checked": 105,
+  "new_interpreter_caches": []
+}

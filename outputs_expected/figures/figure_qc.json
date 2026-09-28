@@ -1,0 +1,94 @@
+{
+  "work_package": "WP-MORPH-05D",
+  "stage": "FROZEN_RESULT_FIGURE_PRODUCTION",
+  "script_version": "WP-MORPH-05D-FIGURE-PRODUCTION-V1",
+  "revision": "PRESENTATION_ONLY_REVISION_V1",
+  "revision_scope": "visualisation only: no frozen value, summary quantity, row order, relationship order, scale, selection, metric or analytical condition was changed, added, filtered or ranked",
+  "presentation_only_changes": [
+    "Figure 1: min-max whiskers lightened and thinned below the median connector line weight",
+    "Figure 1: Panel A directional markers changed from blue to neutral dark grey (no categorical meaning)",
+    "Figure 2: interpretation sentence removed from the figure body and moved into the caption",
+    "Figure S1: three-level hierarchical column headers, widened canvas, larger block spacing, group separator",
+    "Figure S1: Exploration and Validation matrices each carry their own phase-specific city x relationship row labels (no shared exploration-only label column)",
+    "Figure S1: explanatory paragraph removed from the figure body and moved into the caption",
+    "Figure S2: range connector lines lightened; markers unchanged"
+  ],
+  "previous_version": {
+    "path": "C:\\china_meld\\experiments\\wp_morph05d_nonproduction\\figure_v1\\00_previous_version_backup",
+    "present": true,
+    "file_count": 17,
+    "files": {
+      "Fig_main_1_direction_magnitude.pdf": "FA37913492156F0D51EF3F8EBA67F7FB0809067FF5903945E026B73047C72586",
+      "Fig_main_1_direction_magnitude.png": "DD2C56B62463E91C379C495DCCF1C1632CDFB362EB94CCB832E1472FB4A5B6C7",
+      "Fig_main_1_direction_magnitude.svg": "21E48F9DEE02836BC417913F95510630BF67C2939B78F3757FE8EDDF6F459314",
+      "Fig_main_2_robustness_structure.pdf": "0183B1C0315640F9ECB43BAB171063A62F222379939F97F4075A38EC5A12B000",
+      "Fig_main_2_robustness_structure.png": "364AB959B1BBBF060BDA09A158E030382CD0C78AC2E6A9022A2241E0B8C5871E",
+      "Fig_main_2_robustness_structure.svg": "1262C0E03D31FBB892FBDB10F4A3D3104E63401E4241F4ABD45267E1B29748C4",
+      "Fig_S1_city_level_sensitivity.pdf": "C6ABED1FA910EE4E66BA007C6657CC3017AF305295C69624C86C4EAC73271CE6",
+      "Fig_S1_city_level_sensitivity.png": "F2C04F8B86CD44BF3156DBEFAC837D8D76929423E5835CAC00E8E2F9EA304F47",
+      "Fig_S1_city_level_sensitivity.svg": "C8631D7974E7557289A3FEFBC9B2914D8BB845A73C24DF0780BFA8FDDF197158",
+      "Fig_S2_cross_city_dispersion.pdf": "7135EAEC22566653383AD633AFB8E93A75F5B8CAA1C916B63007D7DE0E6B0F04",
+      "Fig_S2_cross_city_dispersion.png": "73280052ACBDBDD5BB17EA2DDEF6215AC34BE0A2D909C10665D47947EC88D98C",
+      "Fig_S2_cross_city_dispersion.svg": "8F65E8E8F9E6814243A7292464E002DBCE5236A1AA31A6C7B3102C7DC20D54C1",
+      "figure_captions.md": "8D22575189C627E6B35544FD64EE1DABE8F7C29E488564B53BAC03DE34899D30",
+      "figure_data_audit.json": "220ED06A6597521570F3FEB7A27B2C3FCD7E363362F3A6107E420ABF2654732F",
+      "figure_qc.json": "9E61ED25A7C61A54391DAEA633146B0ED261A74EA8677AAF057EB85DA4676C93",
+      "manifest.json": "438455EB14E24DC9A04F271957E0C1A02F4A47D9D953831A744862F4AC3F936C",
+      "run_wp_morph05d_figures_v1.py": "56F76DB4A46DD88E21F0ED076843A0FE74251C7B89CC43023FD5DC4AC6758D0B"
+    }
+  },
+  "source_run": "C:\\china_meld\\experiments\\wp_morph05c_nonproduction\\run_20260927_191608_791495",
+  "source_work_package": "WP-MORPH-05C",
+  "source_overall_qc": "PASS",
+  "source_input_identity_qc": "PASS",
+  "source_sha256_verified_against_manifest": {
+    "01_directional_concordance.csv": "6DF36B770F23A2F49445156B5F7D881AECEF6B2B48239856F96098DBAC48EFC2",
+    "02_exploration_validation_magnitude_summary.csv": "648F7B5412DA4DEC94C22D41A71E0CA194444E838B54C50E447CB2E318FBD98C",
+    "03_scale_coverage_metric_sensitivity.csv": "8012B2B3CAD38E4AAA19A9DA91E49F362A77BC023646AFBCE5BDC6402A0CD082",
+    "04_relationship_robustness_profile.csv": "6ED93EF7528BE61924E1421E26BD77A83ECE54C3DFF4A6C41536B42AA2D7A494"
+  },
+  "generated_at": "2026-09-27T20:12:07",
+  "RAW_50M_DATA_READ": false,
+  "WP05A_WINDOW_DATA_READ": false,
+  "CORRELATIONS_RECOMPUTED": false,
+  "NEW_STATISTICAL_METRIC_COMPUTED": false,
+  "P_VALUES_COMPUTED": false,
+  "SIGNIFICANCE_TESTING_USED": false,
+  "CITY_REMOVED": false,
+  "RELATIONSHIP_REMOVED": false,
+  "SCALE_REMOVED": false,
+  "SELECTION_REMOVED": false,
+  "METRIC_REMOVED": false,
+  "RELATIONSHIP_RANKING_CREATED": false,
+  "ROBUSTNESS_SCORE_CREATED": false,
+  "FIGURE_DATA_SOURCE_ONLY_WP05C": true,
+  "FORMAL_CANU_PRODUCTION_AUTHORIZED": false,
+  "FORMAL_CANU_GATES": "UNCHANGED",
+  "SCRIPT_SHA256_BEFORE_FIGURES": "3AC43986484D37658092E163605349911F907F478D37384CC6CFBEDD9930A4CF",
+  "SCRIPT_SHA256_AFTER_FIGURES": "3AC43986484D37658092E163605349911F907F478D37384CC6CFBEDD9930A4CF",
+  "NO_SCRIPT_CHANGED_AFTER_FIGURES": true,
+  "FIGURES_GENERATED": 4,
+  "FIGURE_FILES": {
+    "Fig_main_1_direction_magnitude": {
+      "png": "C:\\china_meld\\experiments\\wp_morph05d_nonproduction\\figure_v1\\Fig_main_1_direction_magnitude.png",
+      "pdf": "C:\\china_meld\\experiments\\wp_morph05d_nonproduction\\figure_v1\\Fig_main_1_direction_magnitude.pdf",
+      "svg": "C:\\china_meld\\experiments\\wp_morph05d_nonproduction\\figure_v1\\Fig_main_1_direction_magnitude.svg"
+    },
+    "Fig_main_2_robustness_structure": {
+      "png": "C:\\china_meld\\experiments\\wp_morph05d_nonproduction\\figure_v1\\Fig_main_2_robustness_structure.png",
+      "pdf": "C:\\china_meld\\experiments\\wp_morph05d_nonproduction\\figure_v1\\Fig_main_2_robustness_structure.pdf",
+      "svg": "C:\\china_meld\\experiments\\wp_morph05d_nonproduction\\figure_v1\\Fig_main_2_robustness_structure.svg"
+    },
+    "Fig_S1_city_level_sensitivity": {
+      "png": "C:\\china_meld\\experiments\\wp_morph05d_nonproduction\\figure_v1\\Fig_S1_city_level_sensitivity.png",
+      "pdf": "C:\\china_meld\\experiments\\wp_morph05d_nonproduction\\figure_v1\\Fig_S1_city_level_sensitivity.pdf",
+      "svg": "C:\\china_meld\\experiments\\wp_morph05d_nonproduction\\figure_v1\\Fig_S1_city_level_sensitivity.svg"
+    },
+    "Fig_S2_cross_city_dispersion": {
+      "png": "C:\\china_meld\\experiments\\wp_morph05d_nonproduction\\figure_v1\\Fig_S2_cross_city_dispersion.png",
+      "pdf": "C:\\china_meld\\experiments\\wp_morph05d_nonproduction\\figure_v1\\Fig_S2_cross_city_dispersion.pdf",
+      "svg": "C:\\china_meld\\experiments\\wp_morph05d_nonproduction\\figure_v1\\Fig_S2_cross_city_dispersion.svg"
+    }
+  },
+  "FIGURE_QC": "PASS"
+}

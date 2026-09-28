@@ -1,0 +1,18 @@
+{
+  "method_contract_id": "WP-MORPH-05C-METHOD-V1",
+  "method_contract_sha256": "936A3FB27990A2F1BEBFD976333E89B216086E4B9550B18B6454D8A47C2133D3",
+  "implementation_spec_id": "WP-MORPH-05C-IMPLEMENTATION-V1",
+  "status": "EXECUTED_WITHOUT_METHOD_CHANGE",
+  "quartile_method": "pandas Series.quantile with interpolation='linear'",
+  "delta_orientation": {
+    "SCALE": "5km - 1km",
+    "COVERAGE": "COVERAGE_80 - ALL",
+    "METRIC": "weighted_Pearson_r - Spearman_rho"
+  },
+  "exploration_profile_direction_counts": "NA; no retrospective WP03 SAME_SIGN classification introduced",
+  "validation_profile_direction_counts": "inherited from frozen WP05B validation_direction_checks.csv",
+  "p_values_allowed": false,
+  "posthoc_success_threshold_allowed": false,
+  "composite_robustness_score_allowed": false,
+  "relationship_ranking_allowed": false
+}

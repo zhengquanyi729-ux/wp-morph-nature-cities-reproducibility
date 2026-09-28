@@ -1,0 +1,106 @@
+{
+  "step": "05_make_source_tables",
+  "status": "PASS",
+  "source_data_files": {
+    "fig2": {
+      "file": "outputs_reproduced\\tables\\Source Data Fig. 2.csv",
+      "row_count": 27,
+      "column_count": 27,
+      "columns": [
+        "figure_panel",
+        "relationship",
+        "scale",
+        "selection",
+        "metric",
+        "validation_unit_count",
+        "same_sign_count",
+        "sign_reversal_count",
+        "insufficient_count",
+        "undefined_count",
+        "directional_reproducibility_fraction",
+        "exploration_n",
+        "exploration_median",
+        "exploration_q1",
+        "exploration_q3",
+        "exploration_min",
+        "exploration_max",
+        "exploration_range",
+        "validation_n",
+        "validation_median",
+        "validation_q1",
+        "validation_q3",
+        "validation_min",
+        "validation_max",
+        "validation_range",
+        "median_shift",
+        "absolute_median_shift"
+      ]
+    },
+    "fig3": {
+      "file": "outputs_reproduced\\tables\\Source Data Fig. 3.csv",
+      "row_count": 6,
+      "column_count": 12,
+      "columns": [
+        "phase",
+        "relationship",
+        "directional_same_sign_count",
+        "directional_eligible_count",
+        "median_cross_city_range",
+        "max_cross_city_range",
+        "median_abs_scale_delta",
+        "max_abs_scale_delta",
+        "median_abs_coverage_delta",
+        "max_abs_coverage_delta",
+        "median_abs_metric_delta",
+        "max_abs_metric_delta"
+      ]
+    },
+    "s1": {
+      "file": "outputs_reproduced\\tables\\Source Data Supplementary Fig. S1.csv",
+      "row_count": 216,
+      "column_count": 12,
+      "columns": [
+        "phase",
+        "city_id",
+        "relationship",
+        "dimension",
+        "conditioning_scale_or_selection",
+        "metric",
+        "comparison_a",
+        "comparison_b",
+        "coefficient_a",
+        "coefficient_b",
+        "signed_delta",
+        "absolute_delta"
+      ]
+    },
+    "s2": {
+      "file": "outputs_reproduced\\tables\\Source Data Supplementary Fig. S2.csv",
+      "row_count": 24,
+      "column_count": 6,
+      "columns": [
+        "relationship",
+        "scale",
+        "selection",
+        "metric",
+        "exploration_range",
+        "validation_range"
+      ]
+    }
+  },
+  "derived_from": {
+    "fig2": [
+      "01_directional_concordance.csv",
+      "02_exploration_validation_magnitude_summary.csv"
+    ],
+    "fig3": [
+      "04_relationship_robustness_profile.csv"
+    ],
+    "s1": [
+      "03_scale_coverage_metric_sensitivity.csv"
+    ],
+    "s2": [
+      "02_exploration_validation_magnitude_summary.csv"
+    ]
+  }
+}

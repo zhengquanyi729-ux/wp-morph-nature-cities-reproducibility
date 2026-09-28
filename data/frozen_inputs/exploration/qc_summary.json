@@ -1,0 +1,78 @@
+{
+  "work_package": "WP-MORPH-03",
+  "status": "NONPRODUCTION_EXPLORATORY",
+  "overall_qc": "PASS",
+  "source_work_package": "WP-MORPH-02B",
+  "source_manifest_sha256": "00142170B2BC59FF88A844DBC63FBA4B03F7A631842F5929ABE88F111F07FE3B",
+  "cross_scale_qc": [
+    {
+      "city_id": "P004",
+      "status": "PASS",
+      "parent_5km_windows": 101,
+      "maximum_field_errors": {
+        "cell_count": 0.0,
+        "effective_area_m2": 7.450580596923828e-09,
+        "built_cell_area_m2": 1.862645149230957e-09,
+        "height_valid_cell_area_m2": 1.862645149230957e-09
+      }
+    },
+    {
+      "city_id": "P026",
+      "status": "PASS",
+      "parent_5km_windows": 127,
+      "maximum_field_errors": {
+        "cell_count": 0.0,
+        "effective_area_m2": 3.725290298461914e-09,
+        "built_cell_area_m2": 4.656612873077393e-10,
+        "height_valid_cell_area_m2": 4.656612873077393e-10
+      }
+    },
+    {
+      "city_id": "P037",
+      "status": "PASS",
+      "parent_5km_windows": 47,
+      "maximum_field_errors": {
+        "cell_count": 0.0,
+        "effective_area_m2": 7.450580596923828e-09,
+        "built_cell_area_m2": 1.862645149230957e-09,
+        "height_valid_cell_area_m2": 1.862645149230957e-09
+      }
+    }
+  ],
+  "registered_variables": [
+    "building_coverage_mean",
+    "road_density_mean_km_per_km2",
+    "height_conditional_mean_m"
+  ],
+  "registered_pairs": [
+    [
+      "building_coverage_mean",
+      "road_density_mean_km_per_km2"
+    ],
+    [
+      "building_coverage_mean",
+      "height_conditional_mean_m"
+    ],
+    [
+      "road_density_mean_km_per_km2",
+      "height_conditional_mean_m"
+    ]
+  ],
+  "window_selections": {
+    "ALL": 0.0,
+    "COVERAGE_80": 0.8
+  },
+  "minimum_valid_windows": 10,
+  "limitations": [
+    "Relationships are descriptive, not causal",
+    "No statistical significance test is performed",
+    "Spatial autocorrelation is not accounted for",
+    "Spearman is unweighted",
+    "Weighted Pearson uses explicit area weights",
+    "Height analysis uses valid-height area weights",
+    "Incomplete-window sensitivity is reported",
+    "No residential-deficit labels are used",
+    "No formal CANU result is generated",
+    "No scientific gate is modified"
+  ]
+}

@@ -1,0 +1,289 @@
+{
+  "config_id": "WP-MORPH-REPRODUCIBILITY-EXPECTED-OUTPUTS-V1",
+  "note": "Expected row counts and frozen identities of every reproduced analytical table, plus the manuscript anchor values checked by scripts/06_verify_manuscript_numbers.py.",
+  "csv_dialect": {
+    "encoding": "utf-8-sig",
+    "float_format": "%.12g",
+    "index": false,
+    "lineterminator": "\r\n",
+    "note": "The line terminator is pinned explicitly so that CSV output is byte-identical on Windows and Linux. pandas' default terminator is os.linesep, which would produce LF on Linux."
+  },
+
+  "wp05b_outputs": {
+    "validation_correlations.csv": {
+      "row_count": 36,
+      "sha256": "B0A2CCCB5B42DAEED12B51CDC129F681FC05946B3C42A11065E97CC10E35E75B",
+      "columns": [
+        "city_id", "city_name", "scale", "selection", "pair_id", "x_variable",
+        "y_variable", "expected_sign", "weight_variable", "n_total_windows",
+        "n_pairwise_valid_windows", "n_weighted_valid_windows",
+        "valid_effective_area_m2", "weighted_pearson_weight_sum_m2",
+        "spearman_rho", "weighted_pearson_r", "p_value_computed"
+      ]
+    },
+    "validation_direction_checks.csv": {
+      "row_count": 36,
+      "sha256": "15E31E50CAAB5F6A786209BBBB8C1249EB4AB8F39E00601038046946CEE880E3",
+      "columns": [
+        "city_id", "city_name", "scale", "selection", "pair_id", "expected_sign",
+        "n_total_windows", "n_pairwise_valid_windows", "spearman_rho",
+        "weighted_pearson_r", "spearman_direction", "weighted_pearson_direction",
+        "coefficient_direction_agreement", "classification", "any_sign_reversal"
+      ]
+    }
+  },
+
+  "wp05c_outputs": {
+    "01_directional_concordance.csv": {
+      "row_count": 3,
+      "sha256": "6DF36B770F23A2F49445156B5F7D881AECEF6B2B48239856F96098DBAC48EFC2"
+    },
+    "02_exploration_validation_magnitude_summary.csv": {
+      "row_count": 24,
+      "sha256": "648F7B5412DA4DEC94C22D41A71E0CA194444E838B54C50E447CB2E318FBD98C"
+    },
+    "03_scale_coverage_metric_sensitivity.csv": {
+      "row_count": 216,
+      "sha256": "8012B2B3CAD38E4AAA19A9DA91E49F362A77BC023646AFBCE5BDC6402A0CD082"
+    },
+    "04_relationship_robustness_profile.csv": {
+      "row_count": 6,
+      "sha256": "6ED93EF7528BE61924E1421E26BD77A83ECE54C3DFF4A6C41536B42AA2D7A494"
+    }
+  },
+
+  "expected_validation_classification_counts": {
+    "TOTAL_VALIDATION_CONDITIONS": 36,
+    "SAME_SIGN": 36,
+    "SIGN_REVERSAL": 0,
+    "INSUFFICIENT_WINDOWS": 0,
+    "UNDEFINED": 0
+  },
+
+  "manuscript_anchor_tolerance": 5e-05,
+
+  "manuscript_anchor_checks": [
+    {
+      "check_id": "A_direction_36_of_36",
+      "description": "Every frozen validation condition retains the expected positive direction.",
+      "source_file": "validation_direction_checks.csv",
+      "source_columns": ["classification"],
+      "filter": "all frozen validation conditions",
+      "calculation": "count(classification == 'SAME_SIGN')",
+      "expected_value": 36
+    },
+    {
+      "check_id": "B_building_road_5km_all_spearman_exploration_median",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": ["exploration_median"],
+      "filter": "relationship=BUILDING_ROAD; scale=5km; selection=ALL; metric=SPEARMAN_RHO",
+      "calculation": "median of the three exploration city coefficients",
+      "expected_value": 0.733981031691
+    },
+    {
+      "check_id": "B_building_road_5km_all_spearman_validation_median",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": ["validation_median"],
+      "filter": "relationship=BUILDING_ROAD; scale=5km; selection=ALL; metric=SPEARMAN_RHO",
+      "calculation": "median of the three validation city coefficients",
+      "expected_value": 0.727080205595
+    },
+    {
+      "check_id": "B_building_road_5km_coverage80_weighted_exploration_median",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": ["exploration_median"],
+      "filter": "relationship=BUILDING_ROAD; scale=5km; selection=COVERAGE_80; metric=WEIGHTED_PEARSON_R",
+      "calculation": "median of the three exploration city coefficients",
+      "expected_value": 0.749126522217
+    },
+    {
+      "check_id": "B_building_road_5km_coverage80_weighted_validation_median",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": ["validation_median"],
+      "filter": "relationship=BUILDING_ROAD; scale=5km; selection=COVERAGE_80; metric=WEIGHTED_PEARSON_R",
+      "calculation": "median of the three validation city coefficients",
+      "expected_value": 0.616589927411
+    },
+    {
+      "check_id": "C_building_height_1km_all_spearman_exploration_median",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": ["exploration_median"],
+      "filter": "relationship=BUILDING_HEIGHT; scale=1km; selection=ALL; metric=SPEARMAN_RHO",
+      "calculation": "median of the three exploration city coefficients",
+      "expected_value": 0.589260652412
+    },
+    {
+      "check_id": "C_building_height_1km_all_spearman_validation_median",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": ["validation_median"],
+      "filter": "relationship=BUILDING_HEIGHT; scale=1km; selection=ALL; metric=SPEARMAN_RHO",
+      "calculation": "median of the three validation city coefficients",
+      "expected_value": 0.65220320208
+    },
+    {
+      "check_id": "C_building_height_1km_all_weighted_exploration_median",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": ["exploration_median"],
+      "filter": "relationship=BUILDING_HEIGHT; scale=1km; selection=ALL; metric=WEIGHTED_PEARSON_R",
+      "calculation": "median of the three exploration city coefficients",
+      "expected_value": 0.344714452551
+    },
+    {
+      "check_id": "C_building_height_1km_all_weighted_validation_median",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": ["validation_median"],
+      "filter": "relationship=BUILDING_HEIGHT; scale=1km; selection=ALL; metric=WEIGHTED_PEARSON_R",
+      "calculation": "median of the three validation city coefficients",
+      "expected_value": 0.300487372702
+    },
+    {
+      "check_id": "C_building_height_5km_all_spearman_exploration_median",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": ["exploration_median"],
+      "filter": "relationship=BUILDING_HEIGHT; scale=5km; selection=ALL; metric=SPEARMAN_RHO",
+      "calculation": "median of the three exploration city coefficients",
+      "expected_value": 0.553010873099
+    },
+    {
+      "check_id": "C_building_height_5km_all_spearman_validation_median",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": ["validation_median"],
+      "filter": "relationship=BUILDING_HEIGHT; scale=5km; selection=ALL; metric=SPEARMAN_RHO",
+      "calculation": "median of the three validation city coefficients",
+      "expected_value": 0.629205610731
+    },
+    {
+      "check_id": "C_building_height_5km_all_weighted_exploration_median",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": ["exploration_median"],
+      "filter": "relationship=BUILDING_HEIGHT; scale=5km; selection=ALL; metric=WEIGHTED_PEARSON_R",
+      "calculation": "median of the three exploration city coefficients",
+      "expected_value": 0.573628215892
+    },
+    {
+      "check_id": "C_building_height_5km_all_weighted_validation_median",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": ["validation_median"],
+      "filter": "relationship=BUILDING_HEIGHT; scale=5km; selection=ALL; metric=WEIGHTED_PEARSON_R",
+      "calculation": "median of the three validation city coefficients",
+      "expected_value": 0.624071314576
+    },
+    {
+      "check_id": "C_building_height_5km_coverage80_spearman_exploration_median",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": ["exploration_median"],
+      "filter": "relationship=BUILDING_HEIGHT; scale=5km; selection=COVERAGE_80; metric=SPEARMAN_RHO",
+      "calculation": "median of the three exploration city coefficients",
+      "expected_value": 0.513294671189
+    },
+    {
+      "check_id": "C_building_height_5km_coverage80_spearman_validation_median",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": ["validation_median"],
+      "filter": "relationship=BUILDING_HEIGHT; scale=5km; selection=COVERAGE_80; metric=SPEARMAN_RHO",
+      "calculation": "median of the three validation city coefficients",
+      "expected_value": 0.457618377872
+    },
+    {
+      "check_id": "C_building_height_5km_coverage80_weighted_exploration_median",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": ["exploration_median"],
+      "filter": "relationship=BUILDING_HEIGHT; scale=5km; selection=COVERAGE_80; metric=WEIGHTED_PEARSON_R",
+      "calculation": "median of the three exploration city coefficients",
+      "expected_value": 0.541014968327
+    },
+    {
+      "check_id": "C_building_height_5km_coverage80_weighted_validation_median",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": ["validation_median"],
+      "filter": "relationship=BUILDING_HEIGHT; scale=5km; selection=COVERAGE_80; metric=WEIGHTED_PEARSON_R",
+      "calculation": "median of the three validation city coefficients",
+      "expected_value": 0.623192609824
+    },
+    {
+      "check_id": "D_road_height_1km_all_spearman_exploration_median",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": ["exploration_median"],
+      "filter": "relationship=ROAD_HEIGHT; scale=1km; selection=ALL; metric=SPEARMAN_RHO",
+      "calculation": "median of the three exploration city coefficients",
+      "expected_value": 0.651295651439
+    },
+    {
+      "check_id": "D_road_height_1km_all_spearman_validation_median",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": ["validation_median"],
+      "filter": "relationship=ROAD_HEIGHT; scale=1km; selection=ALL; metric=SPEARMAN_RHO",
+      "calculation": "median of the three validation city coefficients",
+      "expected_value": 0.518038844168
+    },
+    {
+      "check_id": "D_road_height_1km_all_weighted_exploration_median",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": ["exploration_median"],
+      "filter": "relationship=ROAD_HEIGHT; scale=1km; selection=ALL; metric=WEIGHTED_PEARSON_R",
+      "calculation": "median of the three exploration city coefficients",
+      "expected_value": 0.650961587179
+    },
+    {
+      "check_id": "D_road_height_1km_all_weighted_validation_median",
+      "source_file": "02_exploration_validation_magnitude_summary.csv",
+      "source_columns": ["validation_median"],
+      "filter": "relationship=ROAD_HEIGHT; scale=1km; selection=ALL; metric=WEIGHTED_PEARSON_R",
+      "calculation": "median of the three validation city coefficients",
+      "expected_value": 0.53068746359
+    }
+  ],
+
+  "robustness_profile_medians": {
+    "04_relationship_robustness_profile.csv": {
+      "BUILDING_ROAD": {
+        "EXPLORATION": {"median_abs_scale_delta": 0.066931, "median_abs_coverage_delta": 0.014647, "median_abs_metric_delta": 0.098643},
+        "VALIDATION": {"median_abs_scale_delta": 0.149845, "median_abs_coverage_delta": 0.013250, "median_abs_metric_delta": 0.034019}
+      },
+      "BUILDING_HEIGHT": {
+        "EXPLORATION": {"median_abs_scale_delta": 0.078152, "median_abs_coverage_delta": 0.011962, "median_abs_metric_delta": 0.208776},
+        "VALIDATION": {"median_abs_scale_delta": 0.174940, "median_abs_coverage_delta": 0.016621, "median_abs_metric_delta": 0.237048}
+      },
+      "ROAD_HEIGHT": {
+        "EXPLORATION": {"median_abs_scale_delta": 0.136255, "median_abs_coverage_delta": 0.023208, "median_abs_metric_delta": 0.102558},
+        "VALIDATION": {"median_abs_scale_delta": 0.193374, "median_abs_coverage_delta": 0.012692, "median_abs_metric_delta": 0.080540}
+      }
+    }
+  },
+
+  "localized_checks": {
+    "P005_BUILDING_HEIGHT_5km_spearman_ALL": 0.729863,
+    "P005_BUILDING_HEIGHT_5km_spearman_COVERAGE_80": 0.450276,
+    "P005_BUILDING_HEIGHT_5km_spearman_absolute_change": 0.279587,
+    "P005_BUILDING_HEIGHT_1km_ALL_spearman": 0.664393,
+    "P005_BUILDING_HEIGHT_1km_ALL_weighted_pearson": 0.289235,
+    "P005_BUILDING_HEIGHT_1km_ALL_absolute_metric_difference": 0.375157
+  },
+
+  "figure_outputs": {
+    "Fig_2_direction_magnitude": {
+      "source_stem": "Fig_main_1_direction_magnitude",
+      "manuscript_figure": "Figure 2",
+      "title": "Directional reproducibility and exploration-validation magnitude concordance",
+      "formats": ["png", "pdf", "svg"]
+    },
+    "Fig_3_robustness_structure": {
+      "source_stem": "Fig_main_2_robustness_structure",
+      "manuscript_figure": "Figure 3",
+      "title": "Relationship-specific robustness structure",
+      "formats": ["png", "pdf", "svg"]
+    },
+    "Supplementary_Fig_S1_city_level_sensitivity": {
+      "source_stem": "Fig_S1_city_level_sensitivity",
+      "manuscript_figure": "Supplementary Figure S1",
+      "title": "City-level signed sensitivity structure",
+      "formats": ["png", "pdf", "svg"]
+    },
+    "Supplementary_Fig_S2_cross_city_dispersion": {
+      "source_stem": "Fig_S2_cross_city_dispersion",
+      "manuscript_figure": "Supplementary Figure S2",
+      "title": "Cross-city coefficient dispersion",
+      "formats": ["png", "pdf", "svg"]
+    }
+  }
+}

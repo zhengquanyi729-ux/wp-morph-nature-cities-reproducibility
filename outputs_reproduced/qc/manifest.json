@@ -1,0 +1,151 @@
+{
+  "work_package": "WP-MORPH-05D",
+  "title": "Frozen-result Figure Production",
+  "status": "NONPRODUCTION_FIGURE_PRODUCTION",
+  "script_version": "WP-MORPH-05D-FIGURE-PRODUCTION-V1",
+  "revision": "PRESENTATION_ONLY_REVISION_V1",
+  "revision_scope": "visualisation only: no frozen value, summary quantity, row order, relationship order, scale, selection, metric or analytical condition was changed, added, filtered or ranked",
+  "previous_version": {
+    "path": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\outputs_reproduced\\figures\\00_previous_version_backup",
+    "present": false,
+    "files": {}
+  },
+  "script_path": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\scripts\\utils\\wp05d_figure_engine.py",
+  "script_sha256_before_figures": "5FC0A468A17548706505EC33C008B8C3B3424808CBDBC721578833DA69D25F5E",
+  "script_sha256_after_figures": "5FC0A468A17548706505EC33C008B8C3B3424808CBDBC721578833DA69D25F5E",
+  "output_dir": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\outputs_reproduced\\qc",
+  "source_run": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\data\\frozen_inputs\\synthesis",
+  "source_work_package": "WP-MORPH-05C",
+  "frozen_inputs": [
+    {
+      "file_name": "01_directional_concordance.csv",
+      "path": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\data\\frozen_inputs\\synthesis\\01_directional_concordance.csv",
+      "sha256": "6DF36B770F23A2F49445156B5F7D881AECEF6B2B48239856F96098DBAC48EFC2"
+    },
+    {
+      "file_name": "02_exploration_validation_magnitude_summary.csv",
+      "path": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\data\\frozen_inputs\\synthesis\\02_exploration_validation_magnitude_summary.csv",
+      "sha256": "648F7B5412DA4DEC94C22D41A71E0CA194444E838B54C50E447CB2E318FBD98C"
+    },
+    {
+      "file_name": "03_scale_coverage_metric_sensitivity.csv",
+      "path": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\data\\frozen_inputs\\synthesis\\03_scale_coverage_metric_sensitivity.csv",
+      "sha256": "8012B2B3CAD38E4AAA19A9DA91E49F362A77BC023646AFBCE5BDC6402A0CD082"
+    },
+    {
+      "file_name": "04_relationship_robustness_profile.csv",
+      "path": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\data\\frozen_inputs\\synthesis\\04_relationship_robustness_profile.csv",
+      "sha256": "6ED93EF7528BE61924E1421E26BD77A83ECE54C3DFF4A6C41536B42AA2D7A494"
+    }
+  ],
+  "generated_outputs": [
+    {
+      "role": "WP05D_OUTPUT_Fig_main_1_direction_magnitude.png",
+      "path": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\outputs_reproduced\\figures\\Fig_main_1_direction_magnitude.png",
+      "file_name": "Fig_main_1_direction_magnitude.png",
+      "size_bytes": 800379,
+      "sha256": "3F8B28C4C847C8E13A3AEEC1C75C3F8255DB2E3BF0CEB005B777FFCCC819F147"
+    },
+    {
+      "role": "WP05D_OUTPUT_Fig_main_1_direction_magnitude.pdf",
+      "path": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\outputs_reproduced\\figures\\Fig_main_1_direction_magnitude.pdf",
+      "file_name": "Fig_main_1_direction_magnitude.pdf",
+      "size_bytes": 53486,
+      "sha256": "C4644F3A45980E4E13B639F3C2BE3C04C09844D33A8224A2465B6B8CFBB0AA56"
+    },
+    {
+      "role": "WP05D_OUTPUT_Fig_main_1_direction_magnitude.svg",
+      "path": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\outputs_reproduced\\figures\\Fig_main_1_direction_magnitude.svg",
+      "file_name": "Fig_main_1_direction_magnitude.svg",
+      "size_bytes": 88345,
+      "sha256": "4974E3E4814CA1A1B11F2FE98C03E3DF601BF643AD3DEB4B3C47DF7A591B1C90"
+    },
+    {
+      "role": "WP05D_OUTPUT_Fig_main_2_robustness_structure.png",
+      "path": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\outputs_reproduced\\figures\\Fig_main_2_robustness_structure.png",
+      "file_name": "Fig_main_2_robustness_structure.png",
+      "size_bytes": 217871,
+      "sha256": "5570BC7DE21AFDDDFFB26B3ABF9E4CB1AB3380876481A4C6823951D0D1706332"
+    },
+    {
+      "role": "WP05D_OUTPUT_Fig_main_2_robustness_structure.pdf",
+      "path": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\outputs_reproduced\\figures\\Fig_main_2_robustness_structure.pdf",
+      "file_name": "Fig_main_2_robustness_structure.pdf",
+      "size_bytes": 45634,
+      "sha256": "DDBB5CFC4BD18F231F26A1497585AFB2E5EDF7DD45213E80BAC427EF4011FFD7"
+    },
+    {
+      "role": "WP05D_OUTPUT_Fig_main_2_robustness_structure.svg",
+      "path": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\outputs_reproduced\\figures\\Fig_main_2_robustness_structure.svg",
+      "file_name": "Fig_main_2_robustness_structure.svg",
+      "size_bytes": 36075,
+      "sha256": "B66F18B3B0EC202A056DDDB495B5201D131B4FB73F9514F1EAFB6681B4D51461"
+    },
+    {
+      "role": "WP05D_OUTPUT_Fig_S1_city_level_sensitivity.png",
+      "path": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\outputs_reproduced\\figures\\Fig_S1_city_level_sensitivity.png",
+      "file_name": "Fig_S1_city_level_sensitivity.png",
+      "size_bytes": 1059489,
+      "sha256": "4BE7E2DA9C091F4E73376CF9353081BACC294B507E21BE1C17904D1967958127"
+    },
+    {
+      "role": "WP05D_OUTPUT_Fig_S1_city_level_sensitivity.pdf",
+      "path": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\outputs_reproduced\\figures\\Fig_S1_city_level_sensitivity.pdf",
+      "file_name": "Fig_S1_city_level_sensitivity.pdf",
+      "size_bytes": 113545,
+      "sha256": "7BAD79CBDA76B1C95A9407C35A8AFAA742E2AC76C21510FF2A65C2E635523CD2"
+    },
+    {
+      "role": "WP05D_OUTPUT_Fig_S1_city_level_sensitivity.svg",
+      "path": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\outputs_reproduced\\figures\\Fig_S1_city_level_sensitivity.svg",
+      "file_name": "Fig_S1_city_level_sensitivity.svg",
+      "size_bytes": 147390,
+      "sha256": "063AEF09C75A90A8A887684C9F00BBCEF99527ECD11FC804B57F647A7BB38112"
+    },
+    {
+      "role": "WP05D_OUTPUT_Fig_S2_cross_city_dispersion.png",
+      "path": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\outputs_reproduced\\figures\\Fig_S2_cross_city_dispersion.png",
+      "file_name": "Fig_S2_cross_city_dispersion.png",
+      "size_bytes": 721484,
+      "sha256": "D5E59B315FB633C62CD50066C030F6B8557B0780F1A80F2DEA3E7D2DBA20CB27"
+    },
+    {
+      "role": "WP05D_OUTPUT_Fig_S2_cross_city_dispersion.pdf",
+      "path": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\outputs_reproduced\\figures\\Fig_S2_cross_city_dispersion.pdf",
+      "file_name": "Fig_S2_cross_city_dispersion.pdf",
+      "size_bytes": 48414,
+      "sha256": "1EE93858D3B68D625268EF88FAB33D0DF870CF50946632349BD0390F1D720165"
+    },
+    {
+      "role": "WP05D_OUTPUT_Fig_S2_cross_city_dispersion.svg",
+      "path": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\outputs_reproduced\\figures\\Fig_S2_cross_city_dispersion.svg",
+      "file_name": "Fig_S2_cross_city_dispersion.svg",
+      "size_bytes": 49722,
+      "sha256": "08A38C9A7ADF7A85979E8F365C9E252022A8F0D32912E2D8123B65FA1CE6AAE6"
+    },
+    {
+      "role": "WP05D_OUTPUT_figure_data_audit.json",
+      "path": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\outputs_reproduced\\qc\\figure_data_audit.json",
+      "file_name": "figure_data_audit.json",
+      "size_bytes": 8334,
+      "sha256": "E483FAFBADB15561A16F7D4C2032C781A62BFC55091C40EE4F0424EFFA46D99A"
+    },
+    {
+      "role": "WP05D_OUTPUT_figure_captions.md",
+      "path": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\outputs_reproduced\\qc\\figure_captions.md",
+      "file_name": "figure_captions.md",
+      "size_bytes": 6456,
+      "sha256": "B87DDCFC1CDC857F67DAB65F99AB1C57E02E93480765C48C5632504148AE198E"
+    },
+    {
+      "role": "WP05D_OUTPUT_figure_qc.json",
+      "path": "C:\\china_meld\\submission\\WP_MORPH_Nature_Cities_reproducibility_v1_1\\outputs_reproduced\\qc\\figure_qc.json",
+      "file_name": "figure_qc.json",
+      "size_bytes": 5119,
+      "sha256": "9DE849FBADFBA76783E92E9C587A63B0F0095258530861DC0354682EADCCAA09"
+    }
+  ],
+  "figure_qc": "PASS",
+  "formal_canu_production_authorized": false,
+  "formal_canu_gates": "UNCHANGED"
+}

@@ -1,0 +1,22 @@
+{
+  "work_package": "WP-MORPH-05A",
+  "status": "VALIDATION_AGGREGATION_FROZEN",
+  "source_wp04h_manifest_sha256": "B7EE7BB504B538A714A3D5A9424393EC7802218AD3E9D1E76EBAB5608E5321C5",
+  "source_wp04h_nomination_sha256": "C4BCEEF39D82C7156650BD9A0DA720D2DC59A6377AB9D20D0AA85BDFCF11405F",
+  "authorized_city_ids": [
+    "P001",
+    "P003",
+    "P005"
+  ],
+  "authorized_city_count": 3,
+  "input_identity_pass": true,
+  "base_grid_qc_pass": true,
+  "aggregation_qc_pass": true,
+  "aggregation_contract_frozen": true,
+  "relationship_statistics_computed": false,
+  "correlations_computed": false,
+  "result_values_summarized_in_console": false,
+  "wp_morph05b_execution_authorized": true,
+  "formal_canu_production_authorized": false,
+  "formal_canu_gates_changed": false
+}
