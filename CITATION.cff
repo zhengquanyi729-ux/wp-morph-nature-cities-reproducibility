@@ -1,33 +1,47 @@
 cff-version: 1.2.0
-message: "AUTHOR_METADATA_PENDING_BEFORE_PUBLIC_DEPOSIT - the author list, ORCIDs and affiliations must be completed before this package is deposited publicly."
-title: "Directional reproducibility of urban morphology relationships across analytical settings"
+message: "If you use this software, please cite the archived software release."
+
+title: "WP-MORPH: reproducibility package for directional reproducibility of urban morphology relationships across analytical settings"
+
 abstract: >-
-  Self-contained journal reproducibility package for the WP-MORPH constrained
-  exploration-validation analysis of three pairwise urban morphology
-  relationships (building coverage, road density, conditional building height)
-  across two spatial scales, two window selections and two correlation
-  formulations. The package reproduces the manuscript-level numerical results
-  and figures from frozen inputs and does not execute or authorize the formal
-  CANU production pipeline.
+  Self-contained reproducibility package for the manuscript
+  "Directional reproducibility of urban morphology relationships across analytical settings".
+  The package contains frozen analytical inputs, validation-window data, Python code,
+  automated tests, manuscript-result mappings and figure-generation scripts that reproduce
+  the manuscript-level numerical results and analytical figures. It does not execute or
+  authorize the formal CANU production pipeline.
+
 type: software
 version: "1.1.0"
+date-released: "2026-09-28"
 license: MIT
+
+authors:
+  - family-names: "Zheng"
+    given-names: "Quanyi"
+    affiliation: "Shenzhen Tourism College, Jinan University"
+    orcid: "https://orcid.org/0000-0002-2244-6148"
+
+  - family-names: "Gao"
+    given-names: "Runji"
+    affiliation: "UCSD Rady School of Management"
+
+  - family-names: "Jin"
+    given-names: "Mengxiao"
+    affiliation: "School of Innovation and Creation Design, Shenzhen Polytechnic University"
+    orcid: "https://orcid.org/0009-0000-3925-1809"
+
 keywords:
   - urban morphology
   - reproducibility
+  - spatial scale
   - exploration-validation
-  - spatial scale sensitivity
-  - modifiable areal unit problem
+  - validation
   - building coverage
   - road density
   - building height
-date-released: "2026-09-28"
-authors:
-  - name: "AUTHOR_METADATA_PENDING_BEFORE_PUBLIC_DEPOSIT"
-    # Do not invent author names. Replace this entry with the manuscript author
-    # list (family-names, given-names, ORCID, affiliation) before deposit.
+  - modifiable areal unit problem
+  - Python
+
 notes:
-  - "AUTHOR_METADATA_PENDING_BEFORE_PUBLIC_DEPOSIT: the authoritative author list is the one on the associated manuscript."
-  - "repository-code is intentionally omitted: no public repository URL has been assigned yet."
-  - "The licence of the derived analytical data is recorded as FINAL_DERIVED_DATA_LICENCE = PENDING_AUTHOR_CONFIRMATION in LICENSE.md and must be stated before public deposit."
-  - "Companion artefacts: README.md, REPRODUCIBILITY.md, DATA_DICTIONARY.md, METHODS_MAPPING.md, DETERMINISM_VERIFICATION.md, LICENSE.md."
+  - "MIT applies to the software code. Data licensing and upstream-source obligations are documented separately in LICENSE.md."
